@@ -1,0 +1,54 @@
+import React, { useEffect } from "react";
+import { mylogo } from "../../assets/index";
+import Social from "../home/Social";
+import Cube from "../../cube";
+import { OrbitControls, PerspectiveCamera, RenderTexture } from '@react-three/drei'
+import { Canvas } from '@react-three/fiber'
+import * as THREE from 'three';
+
+function Footer() {
+//const cube = Cube();
+  const { cube, scene, camera } = Cube();
+  const renderer = new THREE.WebGLRenderer();
+
+  useEffect(() => {
+      const cubeContainer = document.getElementById("cube-2");
+      cubeContainer.appendChild(renderer.domElement);
+      renderer.setSize(300, 300);
+      animate();
+  }, []);
+  
+
+  function animate() {
+      requestAnimationFrame(animate);
+      renderer.render(scene, camera);
+      cube.rotation.x += 0.0;
+      cube.rotation.y += 0.01;
+  }
+
+
+  return (
+    <div className='w-full h-auto py-14'>
+        <div className='flex flex-col lgl:flex-row items-center justify-between gap-10 lgl:gap-0 text-center '>
+            <img className='md:justify-center md:text-center ml-8 lgl:ml-0' src={mylogo} alt="logo"  />
+            <div className='flex flex-col gap-10 justify-center ml-8 lgl:ml-20 '>
+                <div className='flex gap-4 items-center '>
+                    
+                    <div className='flex flex-col gap-1 text-center'>
+                        <p className='font-titleFont text-2xl text-designColor'>Raphaël Onana</p>
+                        <p className="text-xs text-gray-400 font-titleFont uppercase italic">Student Software Developer</p>
+                    </div>
+
+                </div>
+                <div><Social  /></div>
+            </div>
+            
+            <div id="cube-2" className=''>
+                      
+            </div>
+        </div>
+    </div>
+  )
+};
+
+export default Footer;
