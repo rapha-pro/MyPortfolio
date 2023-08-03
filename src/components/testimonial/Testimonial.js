@@ -6,6 +6,7 @@ import { RiStarFill } from 'react-icons/ri';
 import { HiArrowRight, HiArrowLeft } from 'react-icons/hi';
 import LeftCard from "./LeftCard";
 import TextCard from "./TextCard";
+import { motion} from 'framer-motion'
 
 
 function SampleNextArrow(props) {
@@ -114,29 +115,29 @@ function Testimonial() {
          <div className="flex justify-center items-center text-center">
                 <Title title={"what people say"} description={"Website Review"} />
         </div>
-        <div className="max-w-6xl mx-auto ">
+        <motion.div 
+            initial = {{opacity:0}}
+            whileInView = {{opacity:1, transition:{duration:1.8}}}
+            className="max-w-6xl mx-auto ">
             <Slider {...settings}>
                 <div className='w-full'>
-                    <div className='w-full h-auto flex flex-col gap-10 lgl:gap-0 lgl:flex-row justify-between '>
+                    <div className='w-full h-auto flex flex-col gap-10 lgl:gap-0 lgl:flex-row justify-between items-stretch'>
 
                         <LeftCard 
                             imageSrc={female}
                             name="John Doe"
-                            username="user 110"
-                            title="Operation Officer"
+                            username=""
+                            title=""
                         />
 
                         
                         <TextCard
-                            ReviewTitle="Travel Mobile App Design"
-                            subTitle="via Upwork - Mar 4, 2015 - Aug 30, 2021 test"
+                            ReviewTitle="Impressive Tech Showcase"
+                            subTitle="July 29 2023"
                             numberOfStars={5}
                             description="
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
+                                Wow, nice website! The UI is amazing. The seamless navigation and visually appealing design make it a pleasure to explore.
+                                I appreciate the engaging content that kept me hooked. Keep up the fantastic work!
                             "
                         />
      
@@ -146,67 +147,9 @@ function Testimonial() {
 
 
 
-                <div className='w-full'>
-                    <div className='w-full h-auto flex flex-col gap-10 lgl:gap-0 lgl:flex-row justify-between '>
-
-                        <LeftCard 
-                            imageSrc={male}
-                            name="John Doe"
-                            username="user 110"
-                            title="Operation Officer"
-                        />
-
-                        
-                        <TextCard
-                            ReviewTitle="Travel Mobile App Design"
-                            subTitle="via Upwork - Mar 4, 2015 - Aug 30, 2021 test"
-                            numberOfStars={5}
-                            description="
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                            "
-                        />
-     
-                    </div>
-                    
-                </div>
-
-
-
-
-
-                <div className='w-full'>
-                    <div className='w-full h-auto flex flex-col gap-10 lgl:gap-0 lgl:flex-row justify-between '>
-
-                        <LeftCard 
-                            imageSrc={female}
-                            name="John Doe"
-                            username="user 110"
-                            title="Operation Officer"
-                        />
-
-                        
-                        <TextCard
-                            ReviewTitle="Travel Mobile App Design"
-                            subTitle="via Upwork - Mar 4, 2015 - Aug 30, 2021 test"
-                            numberOfStars={5}
-                            description="
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit 
-                            "
-                        />
-     
-                    </div>
-                    
-                </div>
+                
             </Slider>
-        </div>
+        </motion.div>
     </section>
   )
 };

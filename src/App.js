@@ -16,9 +16,9 @@ function App() {
         <Navbar  />
       <div className="max-w-screen-xl xl:max-w-screen-2xl lgl:px-8 ">
         <Home  />
-        <Feature  />
         <Projects />
         <Resume />
+        <Feature  />
         <Testimonial  />
         <Contact  />
         <Footer  />

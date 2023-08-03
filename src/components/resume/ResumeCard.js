@@ -1,8 +1,9 @@
 import React from "react"
+import { carleton } from "../../assets/index";
 
-function ResumeCard ( {title, subTitle, result, des} ) {
+function ResumeCard ( {title, subTitle, result, des, source} ) {
   return (
-    <div className="w-full h-1/2 group flex">
+    <div className="w-full h-1/2 group flex mt-10">
       <div className='w-10 h-[6px] bgOpacity mt-16 relative'>
         <span
             className='absolute w-5 h-5 rounded-full -top-2 -left-3 flex
@@ -18,9 +19,20 @@ function ResumeCard ( {title, subTitle, result, des} ) {
       
       <div
         className='w-full bg-black bg-opacity-20 duration-300 flex flex-col justify-center 
-        rounded-lg p-4 lgl:px-10 gap-6 lgl:gap-10 shadow-shadowOne'
+        rounded-lg p-4 lgl:px-10 gap-6 lgl:gap-5 shadow-shadowOne'
       >
-        <div className='flex flex-col lgl:flex-row justify-between lgl:items-center gap-4 lgl:gap-0'>
+        {
+          source ? 
+        <div className='relative sm:w-[14rem] md:w-[20rem] -mb-10 -top-4'>
+            <img className='text-gray-300' src={source} alt='carleton logo' />
+        </div> 
+
+        :
+
+        ""
+        } 
+
+        <div className='flex flex-col lgl:flex-row justify-between lgl:items-center gap-4 p-2 lgl:gap-0'>
             <div>
                 <h3 className='text-xl md:text-2xl font-semibold group-hover:text-white duration-300'>{title}</h3>
                 <p className='text-sm md:text-base mt-2 text-gray-400 group-hover:text-white duration-300'>{subTitle}</p>

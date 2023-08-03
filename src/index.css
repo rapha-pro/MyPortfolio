@@ -5,11 +5,12 @@
 
 @Layer components{
   .bannerIcon{
-    @apply w-16 h-16 bg-black border-2 bg-opacity-25 text-gray-200 text-xl inline-flex 
-    items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40
+    @apply w-[90%] h-[90%] absolute bg-black border-2  text-gray-200  
+    items-center justify-center rounded-md shadow-shadowOne 
     hover:translate-y-1 transition-all hover:text-designColor cursor-pointer
-    duration-300;
+    duration-300 justify-center items-center p-4;
   }
+  
 
   .resumeLi {
     @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex
@@ -21,16 +22,17 @@
   }
 
   .contactInput {
-    @apply w-full h-12 px-10 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e]
-    text-lightText active:outline-none focus-visible:outline-designColor outline-none
+    @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e]
+    text-lightText active:outline-none focus-visible:outline-blue-500 outline-none
     focus-visible:border-b-transparent duration-300;
   }
 
   .contactTextArea {
     @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e]
-    text-lightText px-10 py-2 active:outline-none focus-visible:outline-designColor outline-none
+    text-lightText px-10 py-2 active:outline-none focus-visible:outline-blue-500 outline-none
     focus-visible:border-b-transparent duration-300 resize-none;
   }
+  
 }
 
 .active {
@@ -39,4 +41,87 @@
 
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+
+/* -----------------------CUSTOM STYLING---------------------------------- */
+
+.button {
+  @apply h-auto m-0 p-0 border-[none] tracking-[3px] no-underline text-[length:var(--fs-size)] relative uppercase text-transparent;
+  background: transparent;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37c4ff;;
+  --fs-size: 1em;
+  font-family: "Arial";
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  @apply absolute box-border content-[attr(data-text)] text-[color:var(--animation-color)] w-[0%] border-r-[length:var(--border-right)]
+   border-r-[color:var(--animation-color)] overflow-hidden transition-[1s] duration-500 ease-in-out border-solid inset-0;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.button:hover .hover-text {
+  @apply w-full;
+  filter: drop-shadow(0 0 23px var(--animation-color));
+}
+
+
+
+
+
+.socialCard {
+  @apply relative w-16 h-16 flex justify-center items-center overflow-hidden rounded-[5px];
+  background: black;
+}
+
+.socialCard:hover::before {
+  @apply content-[''] w-6/12 h-[140%] animate-[spin_3.5s_linear_infinite] z-0;
+  position: absoulte;
+  background: linear-gradient(#0cf, #d400d4);
+}
+.socialCard:hover::after {
+  @apply content-[""] absolute -z-10 rounded-[10px] inset-1;
+  background: black;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.imageCard {
+  @apply relative justify-center items-center overflow-hidden rounded-[5px] bg-black;  
+}
+
+.imageCard::before {
+  @apply content-[''] w-6/12 h-[140%] animate-[spin_5s_linear_infinite] z-0;
+  position: absoulte;
+  background: linear-gradient(#0cf, #0cb823);
+}
+.imageCard::after {
+  @apply content-[""] absolute -z-10 rounded-[10px] inset-1 bg-black;
+}
+
+
+.imageInterior {
+  @apply lgl:w-[98%] lgl:h-[98%] absolute p-6 shadow-shadowInner rounded-md z-10 bg-black sm:p-4;
+}
+
+.imageInterior img {
+  @apply sm:p-2 lgl:p-0;
 }

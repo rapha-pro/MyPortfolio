@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
+import emailjs from '@emailjs/browser';
+import { motion} from 'framer-motion'
 
 function Contact (props) {
   const [name, setName] = useState("");
@@ -10,6 +12,9 @@ function Contact (props) {
   const [message, setMessage] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
   const [successMsg, setSuccessMsg] = useState("");
+
+
+  const form = useRef();
 
 
   const nameErrorMsg    = "name is required!";
@@ -43,11 +48,30 @@ function Contact (props) {
         setSuccessMsg(
         `Thank you ${name}! your message has been sent Succesfully!`
         );
+        sendEmail(e);
         console.log(name, phoneNumber, email, subject, message);
+
     }
 
 
   }
+
+
+  function sendEmail(e) {
+    e.preventDefault();    //This is important,  the email won't send without it
+
+    console.log("normally sent");
+
+    emailjs.sendForm('service_mgkhnb9', 'template_iiia6jy', form.current, '_7aUTVC31iErlK7fk')
+      .then((result) => {
+          window.location.reload()  //This is to reload the page (since e.preventDefault() cancelled that behavior) 
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
+
+
 
   return (
     <section 
@@ -61,14 +85,18 @@ function Contact (props) {
         />
       </div>
         
-      <div className='w-full'>
+      <motion.div 
+        initial = {{opacity:0, translateX: 100}}
+        whileInView = {{opacity:1, transition:{duration:1.2}, translateX: 0}}
+        className='w-full'>
+    
         <div className='w-full h-auto flex flex-col lgl:flex-row justify-between gap-10 lgl:gap-0 '>
           
           <ContactLeft  />
 
-          <div className='w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex
+          <div className='w-full lgl:w-[60%] h-full lgl:h-[52.5rem] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex
           flex-col gap-8 p-4 lgl:p-8 shadow-shadowOne  rounded-lg'>
-            <form className='w-full flex flex-col gap-4 lgl:gap-6 py-3 font-titleFont font-medium '>
+            <form className='w-full flex flex-col gap-4 lgl:gap-6 py-3 font-titleFont font-medium' ref={form} onSubmit={sendEmail}>
                 <div className='w-full flex flex-col lgl:flex-row gap-10'>
 
                   <div className='w-full lgl:w-1/2 flex flex-col gap-4 group'>
@@ -78,11 +106,12 @@ function Contact (props) {
                       value={name} 
                       type='text' 
                       id='name' 
+                      name="user_name"
                       className= {`${
                         errorMsg === nameErrorMsg && 
                         'outline-orange-500' 
                       } 
-                      contactInput`}
+                      contactInput px-4`}
                      />
                   </div>
 
@@ -93,7 +122,8 @@ function Contact (props) {
                       value={phoneNumber} 
                       type='text' 
                       id='phoneNumber' 
-                      className= "contactInput" 
+                      name="user_phoneNumber"
+                      className= "contactInput px-4" 
                     />
                   </div>
                 </div>
@@ -105,11 +135,12 @@ function Contact (props) {
                     value = {email}
                     type='email' 
                     id='email' 
+                    name='user_email'
                     className= {`${
                       errorMsg === emailErrorMsg && 
                       'outline-orange-500' 
                     } 
-                    contactInput`}
+                    contactInput px-4`}
                   />
                 </div>
 
@@ -120,11 +151,12 @@ function Contact (props) {
                     value={subject}
                     type='text' 
                     id='subject' 
+                    name='user_subject'
                     className= {`${
                       errorMsg === subjectErrorMsg && 
                       'outline-orange-500' 
                     } 
-                    contactInput`}
+                    contactInput px-4`}
                   />
                 </div>
 
@@ -136,20 +168,21 @@ function Contact (props) {
                     cols='30' 
                     rows='8' 
                     id='message' 
+                    name="user_message"
                     className= {`${
                       errorMsg === bodyErrorMsg && 
                       'outline-orange-500' 
                     } 
-                    contactTextArea`} 
+                    contactTextArea p-4`} 
                   >
                   </textarea>
                 </div>
 
-                <div className='w-full'>
+                <div className='w-full mt-14'>
                   <button
                     onClick={handleSend}
                     className='w-full h-12 rounded-lg text-gray-400 bg-[#141518]
-                    text-base tracking-wider hover:border-designColor hover:border-[1px]
+                    text-base tracking-wider hover:border-green-500 hover:border-[1px]
                     border-transparent duration-300 capitalize'
                   >
                     send message
@@ -181,7 +214,7 @@ function Contact (props) {
 
         </div>
                     
-      </div>
+      </motion.div>
     </section>
   )
 };

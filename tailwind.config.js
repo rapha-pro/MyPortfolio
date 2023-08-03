@@ -31,6 +31,9 @@ module.exports = {
       
       boxShadow: {
         shadowOne: "10px 10px 19px #1c1e22, -10px 10px 19px #262a2e",
+        shadowOuterOne: "3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8",
+        shadowOuterTwo: "0 0 0 #d0d0d0, 0 0 0 #f8f8f8",
+        shadowInner: "inset 3px 3px 3px #1c1e22, inset -3px -3px 3px #262a2e",
       },
     },
   },

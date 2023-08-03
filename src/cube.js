@@ -1,24 +1,22 @@
 import * as THREE from "three";
-import {html} from "./assets/index";
-import {java} from "./assets/index";
-import {python} from "./assets/index";
-import {javascript} from "./assets/index";
-import {react_logo} from "./assets/index";
+import {html, css, python, java, javascript, react_logo, tailwind} from "./assets/index";
+
 
 export default function Cube() {
   const geometry = new THREE.BoxGeometry();
-  const texture1 = new THREE.TextureLoader().load(java);
+  const texture1 = new THREE.TextureLoader().load(tailwind);
   const texture2 = new THREE.TextureLoader().load(python);
   const texture3 = new THREE.TextureLoader().load(html);
   const texture4 = new THREE.TextureLoader().load(javascript);
   const texture5 = new THREE.TextureLoader().load(react_logo);
+  const texture6 = new THREE.TextureLoader().load(css);
 
   const textureUrls = [];
 
   textureUrls.push(new THREE.MeshBasicMaterial({ map: texture1 }));
-  textureUrls.push(new THREE.MeshBasicMaterial({ map: texture2 }));
-  textureUrls.push(new THREE.MeshBasicMaterial({ map: texture3 }));
   textureUrls.push(new THREE.MeshBasicMaterial({ map: texture4 }));
+  textureUrls.push(new THREE.MeshBasicMaterial({ map: texture3 }));
+  textureUrls.push(new THREE.MeshBasicMaterial({ map: texture6 }));
   textureUrls.push(new THREE.MeshBasicMaterial({ map: texture5 }));
   textureUrls.push(new THREE.MeshBasicMaterial({ map: texture2 }));
 

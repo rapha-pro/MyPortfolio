@@ -1,19 +1,29 @@
 import React from 'react';
-import {bannerImg} from '../../assets/index';
+import {bannerImg, profile, profile2, profile3} from '../../assets/index';
+import Tilt from 'react-vanilla-tilt'
+import { motion } from 'framer-motion'
 
 export default function RightBanner() {
   return (
-    <div className='w-full lgl:w-1/2  lgl:-mt-48 xl:-mt-0 flex justify-center items-center relative'>
-        <img 
-        className='w-[300px] h-[370px] sm:h-[410px]  md:w-[350px] md:h-[450px] lgl:w-[460px] mdl:w-[370px] mdl:h-[500px] lgl:h-[560px] xl:w-[500px] xl:h-[680px] z-10' 
-            src={bannerImg}
-            alt="bannerImg"
-        />
+    <motion.div 
+      initial = {{opacity:0, translateX: 100}}
+      whileInView = {{opacity:1, transition:{duration:1.2}, translateX: 0}}
+      className='w-full lgl:w-1/2  lgl:-mt-48 xl:-mt-0 flex justify-center items-center relative flex flex-col gap-6'>
+      <Tilt options={{"glare-prerender": true}} style={{backgroundColor: '#212428'}}>
         <div 
-            className='absolute bottom-0 w-[350px] h-[300px] sm:w-[440px] sml:h-[380px] md:w-[500px] md:h-[425px] mdl:w-[600px] mdl:h-[500px] lgl:w-[450px] bg-gradient-to-r 
-            from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center'
+            className=' w-auto h-auto sm:w-[420px] sml:h-[480px] md:w-[350px] md:h-[500px] mdl:w-[500px] mdl:h-[710px] lgl:w-[500px] lgl:h-[710px] bg-gradient-to-r 
+            from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center rounded-md shadow-shadowInner imageCard'
         >
+          <div className='imageInterior '>
+            <img 
+              className='w-full h-full rounded-sm shadowInner' 
+              src={profile2}
+              alt="bannerImg"
+            />
+          </div>
         </div>
-    </div>
+      </Tilt>
+      <p className='text-gray-500 italic capitalize'>High School graduation ~ June 2022</p>
+    </motion.div>
   );
 }

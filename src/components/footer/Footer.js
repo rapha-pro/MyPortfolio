@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { mylogo } from "../../assets/index";
 import Social from "../home/Social";
 import Cube from "../../cube";
-import { OrbitControls, PerspectiveCamera, RenderTexture } from '@react-three/drei'
+import { PerspectiveCamera, RenderTexture } from '@react-three/drei'
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { Canvas } from '@react-three/fiber'
 import * as THREE from 'three';
 
@@ -10,6 +11,8 @@ function Footer() {
 //const cube = Cube();
   const { cube, scene, camera } = Cube();
   const renderer = new THREE.WebGLRenderer();
+  const controls = new OrbitControls(camera, renderer.domElement);
+  controls.update();
 
   useEffect(() => {
       const cubeContainer = document.getElementById("cube-2");
@@ -22,6 +25,7 @@ function Footer() {
   function animate() {
       requestAnimationFrame(animate);
       renderer.render(scene, camera);
+     
       cube.rotation.x += 0.0;
       cube.rotation.y += 0.01;
   }
