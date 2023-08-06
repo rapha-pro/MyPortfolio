@@ -86,7 +86,7 @@ function Contact (props) {
       </div>
         
       <motion.div 
-        initial = {{opacity:0, translateX: 100}}
+        initial = {{opacity:0, translateX: 40}}
         whileInView = {{opacity:1, transition:{duration:1.2}, translateX: 0}}
         className='w-full'>
     

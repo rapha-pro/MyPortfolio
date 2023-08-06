@@ -6,8 +6,8 @@ import { motion} from 'framer-motion'
 function ContactLeft (props) {
   return (
     <motion.div 
-        initial = {{opacity:0, translateY: 90}}
-        whileInView = {{opacity:1, transition:{duration:1.2}, translateY: 0}}
+        initial = {{opacity:0, translateX: -25}}
+        whileInView = {{opacity:1, transition:{duration:1.2}, translateX: 0}}
         className='w-full lgl:w-[35%] h-full bg-gradien-to-r from-[#1e2024] to-[#23272b] rounded-md 
         p-4 lgl:p-8 justify-center shadow-shadowOne flex flex-col gap-8 justify-center'
     >

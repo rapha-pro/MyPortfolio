@@ -124,8 +124,8 @@ function Testimonial() {
                     <div className='w-full h-auto flex flex-col gap-10 lgl:gap-0 lgl:flex-row justify-between items-stretch'>
 
                         <LeftCard 
-                            imageSrc={female}
-                            name="John Doe"
+                            imageSrc={male}
+                            name=""
                             username=""
                             title=""
                         />
