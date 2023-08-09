@@ -11,11 +11,11 @@ import { motion } from 'framer-motion'
 
 export default function Home() {
   const [text] = useTypewriter ({
-      words: ['Software Developer Intern', 'Web developer', 'Future AI/ML Engineer'],
+      words: ['AI/ML Engineer', 'Software Developer', 'Web developer'],
       loop: true,
-      typeSpeed: 50,
-      deleteSpeed: 25,
-      delaySpeed: 2800,
+      typeSpeed: 40,
+      deleteSpeed: 20,
+      delaySpeed: 1800,
   })
 
   //const cube = Cube();
@@ -54,7 +54,7 @@ export default function Home() {
                 </button>
                 </h1>
                 <h2 className='text-2xl lg:text-4xl font-bold text-gray-300'>
-                    a
+                    <span className='text-xl lg:text-3xl italic'>aspiring</span>
                     <span> { text }</span>
                     <Cursor 
                         cursorBlinking="false"

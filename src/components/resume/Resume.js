@@ -16,7 +16,7 @@ export default function Resume() {
     return (
         <section
             id="resume"
-            className="w-full py-20 border-b-[1px] border-b-black"
+            className="w-full py-24 border-b-[1px] border-b-black"
         >
             <div className="flex justify-center text-center">
                 <Title title="view my" description="resume" />

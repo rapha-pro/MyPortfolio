@@ -37,13 +37,13 @@ export default function Projects() {
 
                 <ProjectsCard  
                     title="Purblace place Memory Game"
-                    des= " created a basic version of the Purblace Place memory game using React. 
+                    des= " Implemented a basic version, simulating the Purblace Place memory game using React. 
                     The React implementation provides an interactive and enjoyable user experience."
                     src={memory}
                     gitHref="https://github.com/rapha-pro/Memory-game"
                     globeHref=""
                     technologies={["javascript", "react", "bootstrap", "css"]}
-                    space={40}
+                    space={0}
                 />
 
                 <ProjectsCard  
@@ -55,7 +55,7 @@ export default function Projects() {
                     gitHref="https://github.com/rapha-pro/Weather-app"
                     globeHref=""
                     technologies= {["Python", "Tkinter"]}
-                    space={40}
+                    space={0}
                 />
                 <ProjectsCard  
                     title="Snake-Ladder game Simulation"

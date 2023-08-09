@@ -6,8 +6,8 @@ import { motion} from 'framer-motion'
 function ContactLeft (props) {
   return (
     <motion.div 
-        initial = {{opacity:0, translateX: -25}}
-        whileInView = {{opacity:1, transition:{duration:1.2}, translateX: 0}}
+        initial = {{opacity:0, translateY: 25}}
+        whileInView = {{opacity:1, transition:{duration:1.2}, translateY: 0}}
         className='w-full lgl:w-[35%] h-full bg-gradien-to-r from-[#1e2024] to-[#23272b] rounded-md 
         p-4 lgl:p-8 justify-center shadow-shadowOne flex flex-col gap-8 justify-center'
     >
@@ -21,7 +21,7 @@ function ContactLeft (props) {
             <p className='text-lg font-normal text-gray-400 font-titleFont'>Student Software Developer</p>
             <p className='text-base text-gray-400 tracking-wide'>
                 Hi there, I hope you found this website UI friendly and quite interesting. I will be glad if you can leave a review
-                as I am constantly looking to upgrade this website to the best. Again, feel free to reach me out for any inquiries or job proposition.<br />
+                as I am constantly looking to upgrade this website to the best. Again, feel free to reach me out for any inquiries or job proposal.<br />
                 <span className='leading-10'>Hope to hear from you soon!</span>
 
             </p>

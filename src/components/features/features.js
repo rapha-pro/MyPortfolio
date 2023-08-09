@@ -20,24 +20,27 @@ export default function Feature() {
       >
         <Card 
           title="Web Development" 
-          des="lorem ipsum dolor sit amet con et nonum lorem ipsum dolor sit 
-          amet nonum lorem ipsum dolor sit amet"
+          des="Since the creation, of my very first website ('English Trivia'), i had been driven 
+          to learn a few web technologies, and which has further led me to building this website"
           icon={<RiComputerFill  />}
           done={true}
+          lengthy = {false}
         />
         <Card 
           title="App Development" 
-          des="lorem ipsum dolor sit amet con et nonum lorem ipsum dolor sit 
-          amet nonum lorem ipsum dolor sit amet"
+          des="I had been always amazed by how some lines of codes could be compiled and executed to create an app.
+          Since then, i had always had a high interest learning such versatile technologies."
           icon={<AiFillAppstore />}
           done={false}
+          lengthy = {false}
         />
         <Card 
           title="Artificial Intelligence" 
-          des="lorem ipsum dolor sit amet con et nonum lorem ipsum dolor sit 
-          amet nonum lorem ipsum dolor sit amet"
+          des="AI is a rapidly growing field is becoming an irreplacable tool in many industries. My passion for 
+          AI led me into my current program, where I aspire to learn various technologies to build something impactful"
           icon={<FaGlobe  />}
           done={false}
+          lengthy = {true}
         />
   
       </motion.div>

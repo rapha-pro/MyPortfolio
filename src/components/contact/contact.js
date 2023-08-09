@@ -85,17 +85,18 @@ function Contact (props) {
         />
       </div>
         
-      <motion.div 
-        initial = {{opacity:0, translateX: 40}}
-        whileInView = {{opacity:1, transition:{duration:1.2}, translateX: 0}}
+      <div 
         className='w-full'>
     
         <div className='w-full h-auto flex flex-col lgl:flex-row justify-between gap-10 lgl:gap-0 '>
           
           <ContactLeft  />
 
-          <div className='w-full lgl:w-[60%] h-full lgl:h-[52.5rem] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex
-          flex-col gap-8 p-4 lgl:p-8 shadow-shadowOne  rounded-lg'>
+          <motion.div 
+            initial = {{opacity:0, translateX: 40}}
+            whileInView = {{opacity:1, transition:{duration:1.2}, translateX: 0}}
+            className='w-full lgl:w-[60%] h-full lgl:h-[52.5rem] py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex
+            flex-col gap-8 p-4 lgl:p-8 shadow-shadowOne  rounded-lg'>
             <form className='w-full flex flex-col gap-4 lgl:gap-6 py-3 font-titleFont font-medium' ref={form} onSubmit={sendEmail}>
                 <div className='w-full flex flex-col lgl:flex-row gap-10'>
 
@@ -209,12 +210,12 @@ function Contact (props) {
                 }
                 
             </form>
-          </div>
+          </motion.div>
 
 
         </div>
                     
-      </motion.div>
+      </div>
     </section>
   )
 };

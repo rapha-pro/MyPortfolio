@@ -16,7 +16,7 @@ function Experience () {
                 des={"features"}
             />  
             
-            <div className='mt-6 lgl:mt-14 w-full sm:h-[1100] md:h-[900px] border-l-[6px] border-l-black 
+            <div className='mt-6 lgl:mt-14 w-full sm:h-[1100] md:h-[880px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
        
                 <div className="w-full h-1/2 group flex mt-10">
@@ -66,16 +66,16 @@ function Experience () {
 
 
 
-        <div>
+        <div className='-mt-14'>
             <ResumeTitles 
                 headingText={"Other Experience"}
                 des={"features"}
             /> 
-            <div className='mt-6 lgl:mt-10 w-full h-[900px] border-l-[6px] border-l-black 
+            <div className='mt-6 lgl:mt-14 w-full h-[850px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
        
-                <div className="w-full h-1/2 group flex mt-40">
-                    <div className='w-10 h-[6px] bgOpacity mt-16 xl:mt-60 relative'>
+                <div className="w-full h-1/2 group flex mt-32">
+                    <div className='w-10 h-[6px] bgOpacity mt-16 xl:mt-32 relative'>
                         <span
                             className='absolute w-5 h-5 rounded-full -top-2 -left-3 flex
                             justify-center items-center bg-black bg-opacity-60 group'
@@ -90,7 +90,7 @@ function Experience () {
                     
                     <div
                         className='w-full bg-black bg-opacity-20 duration-300 flex flex-col justify-center 
-                        rounded-lg p-4 lgl:px-10 gap-6 lgl:gap-5 shadow-shadowOne xl:mt-24'
+                        rounded-lg p-4 lgl:px-10 gap-6 lgl:gap-5 shadow-shadowOne xl:mt-0'
                     >
                         <div className='flex flex-col lgl:flex-row justify-between lgl:items-center gap-4 p-2 lgl:gap-0'>
                             <div>

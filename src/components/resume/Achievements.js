@@ -15,7 +15,7 @@ function Achievements () {
                 des={"features"}
             /> 
 
-            <div className='mt-6 lgl:mt-14 w-full sm:h-[1100] md:h-[600px] border-l-[6px] border-l-black 
+            <div className='mt-6 lgl:mt-14 w-full sm:h-[1100px] md:h-[600px] lgl:h-[680px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
        
                 <div className="w-full h-1/2 group flex mt-10">
@@ -65,10 +65,10 @@ function Achievements () {
                 headingText={"Activities"}
                 des={"features"}
             /> 
-            <div className='mt-6 lgl:mt-8 w-full h-[600px] border-l-[6px] border-l-black 
+            <div className='mt-6 lgl:mt-8 w-full h-[660px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
        
-                <div className="w-full h-1/2 group flex mt-40">
+                <div className="w-full h-1/2 group flex mt-28">
                     <div className='w-10 h-[6px] bgOpacity mt-16 xl:mt-20 relative'>
                         <span
                             className='absolute w-5 h-5 rounded-full -top-2 -left-3 flex
