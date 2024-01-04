@@ -70,7 +70,7 @@ export default function Home() {
                 </p>
             </div>
 
-          <div className='flex flex-col gap-6 md:flex-row lgl:flex-col xl:flex-row md:gap-[8.5rem]  lgl:gap-10 xl:gap-48'>
+          <div className='flex flex-col gap-6 md:flex-row lgl:flex-row md:gap-[8.5rem]  lgl:gap-10 xl:gap-48'>
        
             <div>
                 <h2 className='text-base uppercase font-titleFont mb-4 '>
@@ -83,7 +83,7 @@ export default function Home() {
                   <h2 className='text-base uppercase font-titleFont mb-4 '>
                       best skills in
                   </h2>
-                  <div id="cube" className=''>
+                  <div id="cube" className='-ml-2'>
                       
                   </div>
               </div>

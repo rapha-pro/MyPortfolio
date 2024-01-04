@@ -1,5 +1,5 @@
 import React from 'react';
-import {projectOne, projectTwo, projectThree, trivia, english, snake, snakeSim, hangman, hangman2, hangman3, weather, memory} 
+import {projectOne, projectTwo, projectThree, trivia, interactify, galleria, shoppy_mart, christmas, english, snake, snakeSim, hangman, hangman2, hangman3, weather, memory, internship_nest} 
 from '../../assets/index';
 import Title from '../layouts/Title';
 import ProjectsCard from './ProjectsCard';
@@ -23,6 +23,54 @@ export default function Projects() {
                 initial = {{opacity:0, scale: 1.1}}
                 whileInView = {{opacity:1, transition:{duration:.5}, scale:1}}
                 className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14 flex-grow items-baseline'>
+                <ProjectsCard  
+                    title="Internship Nest"
+                    des= " Currently in the development of an internship finder application, 
+                    consolidating diverse internship opportunities from across the web into a 
+                    centralized platform for enhanced student accessibility, reducing by greatly 
+                    application times"
+                    src={internship_nest}
+                    gitHref=""                    
+                    globeHref=""
+                    technologies= {["React", "Node.js", "Express.js", "MongoDB", "Tailwind"]}
+                    space={0}
+                />
+                
+                <ProjectsCard  
+                    title="Galleria Webapp"
+                    des= "Created a gallery web application allowing artists to showcase their art, 
+                    as well as interact with other artists artworks on the platform"
+                    src={galleria}
+                    gitHref=""                    
+                    globeHref=""
+                    youtubeHref="https://youtu.be/BV4YvM95jKQ"
+                    technologies= {["Node.js", "Express.js", "MongoDB", "Pug", "Html", "css"]}
+                    space={0}
+                />
+
+                <ProjectsCard  
+                    title="Shoppy mart"
+                    des= "Developed a simulated online store web application that emulates fundamental
+                    store operations using JavaScript. The project included an interactive user interface
+                    and was undertaken as part of our web development assignment"
+                    src={shoppy_mart}
+                    gitHref=""                    
+                    globeHref=""
+                    technologies= {["Node.js", "Express.js", "MongoDB", "Pug", "Html", "css"]}
+                    space={0}
+                />
+
+                <ProjectsCard  
+                    title="Christmas Wish website"
+                    des= "Rendered a functional and responsive website interface, dedicated to 
+                    conveying Christmas and New Year wishes."
+                    src={christmas}
+                    gitHref="https://github.com/rapha-pro/christmas-static"                    
+                    globeHref="https://raphael-xmas-phi.vercel.app/"
+                    technologies= {["Html", "css", "javascript"]}
+                    space={0}
+                />
+
                 <ProjectsCard  
                     title="English Trivia"
                     des= "As part of my High School Project, I Implemented a trivia web app that gamified certain English lessons into

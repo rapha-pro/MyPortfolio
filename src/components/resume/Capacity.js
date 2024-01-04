@@ -14,7 +14,7 @@ const Capacity = ( { title, percentage } ) => {
             className='w-full h-full bg-gradient-to-r from-blue-600 via-pink-500 
             to-red-500 rounded-md relative'
             >
-            <span className='absolute -top-7 right-0'>{percentage}%</span>
+            <span className='absolute -top-9 right-0'>{percentage}%</span>
             </motion.span>
             
         </span>

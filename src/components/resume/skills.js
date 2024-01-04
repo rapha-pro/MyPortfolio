@@ -18,19 +18,27 @@ function Skills () {
             /> 
             <Capacity  
               title = 'python'
-              percentage = {70}
-            />
-            <Capacity  
-              title = 'java'
               percentage = {40}
             />
             <Capacity  
-              title = 'javascript'
-              percentage = {55}
+              title = 'java'
+              percentage = {50}
             />
             <Capacity  
-              title = 'sql'
-              percentage = {15}
+              title = 'javascript'
+              percentage = {90}
+            />
+            <Capacity  
+              title = 'C'
+              percentage = {40}
+            />
+            <Capacity  
+              title = 'C++'
+              percentage = {30}
+            />
+            <Capacity  
+              title = 'MongoDB'
+              percentage = {70}
             />
            
         </div>
@@ -50,7 +58,7 @@ function Skills () {
               />
               <Capacity  
                 title = 'React'
-                percentage = {50}
+                percentage = {60}
               />
               <Capacity  
                 title = 'Tailwind'
@@ -62,7 +70,7 @@ function Skills () {
               />
               <Capacity  
                 title = 'Django'
-                percentage = {40}
+                percentage = {20}
               />
             </div>
         </div>
@@ -75,11 +83,11 @@ function Skills () {
             <div className='w-full'>
               <Capacity  
                   title = 'english'
-                  percentage = {100}
+                  percentage = {90}
               />
               <Capacity  
                   title = 'french'
-                  percentage = {100}
+                  percentage = {95}
               />
             </div>
         </div>

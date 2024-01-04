@@ -27,7 +27,7 @@ function Education () {
   return (
     <motion.div 
     initial = {{opacity:0, scale:0.9}}
-    whileInView = {{opacity:1, transition:{duration:.7}, scale: 1}}
+    animate = {{opacity:1, transition:{duration:.7}, scale: 1}}
     className='w-full flex flex-col lgl:flex-row  gap-10 lgl:gap-40 items-center'>
         <div className='w-full'>
             <ResumeTitles 

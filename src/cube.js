@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import {html, css, python, java, javascript, react_logo, tailwind} from "./assets/index";
-
+import WebGL from 'three/addons/capabilities/WebGL.js';
 
 export default function Cube() {
   const geometry = new THREE.BoxGeometry();
@@ -30,6 +30,4 @@ export default function Cube() {
   scene.add(cube);
 
   return { cube, scene, camera };
-
-  //return cube;
 }
