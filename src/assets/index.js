@@ -30,6 +30,10 @@ import hangman2 from "./images/projects/hangman2.jpg";
 import hangman3 from "./images/projects/hangman3.jpg";
 import weather from "./images/projects/weather.jpg";
 import memory from "./images/projects/game-preview.png";
+import interactify from "./images/projects/interactify.png";
+import galleria from "./images/projects/galleria.png";
+import christmas from "./images/projects/christmas.png";
+import shoppy_mart from "./images/projects/shoppy_mart.png";
 
 export {
   logo,
@@ -64,4 +68,8 @@ export {
   hangman3,
   weather,
   memory,
+  interactify,
+  galleria,
+  christmas,
+  shoppy_mart
 };

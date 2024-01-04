@@ -1,8 +1,8 @@
 import React from 'react';
 import {BsGithub} from 'react-icons/bs';
-import {FaGlobe} from 'react-icons/fa';
+import {FaGlobe, FaYoutube} from 'react-icons/fa';
 
-export default function ProjectsCard( {title, des, src, gitHref, globeHref, technologies, space} ) {
+export default function ProjectsCard( {title, des, src, gitHref, globeHref, youtubeHref, technologies, space} ) {
 
 
     const TechList = () => {
@@ -46,16 +46,35 @@ export default function ProjectsCard( {title, des, src, gitHref, globeHref, tech
                 <div className='flex items-center justify-between'>
                     <h3 className='font-titleFont font-lg text-xl'>{title}</h3>
                     <div className='flex gap-2'>
-                        <a rel='noopener noreferrer nofollow' target='_blank' href={gitHref} alt='github link'>
-                            <span
-                                className="text-lg w-10 h-10 rounded-full bg-black inline-flex 
-                                justify-center items-center hover:text-designColor duration-300 cursor-pointer"
-                            >
-                                <BsGithub />
-                            </span>
-                        </a>
+                    {
+                            gitHref &&
+                            
+                            <a rel='noopener noreferrer nofollow' target='_blank' href={gitHref} alt='github link'>
+                                <span
+                                    className="text-lg w-10 h-10 rounded-full bg-black inline-flex 
+                                    justify-center items-center hover:text-designColor duration-300 cursor-pointer"
+                                >
+                                    <BsGithub />
+                                </span>
+                            </a>
+                        }
+
                         {
-                            globeHref !== "" ?
+                            youtubeHref &&
+                            
+                            <a rel='noopener noreferrer nofollow' target='_blank' href={youtubeHref} alt='youtube link'>
+                                <span
+                                    className="text-lg w-10 h-10 rounded-full bg-black inline-flex 
+                                    justify-center items-center hover:text-designColor duration-300 cursor-pointer"
+                                >
+                                    <FaYoutube/>
+                                </span>
+                            </a>
+                        }
+
+
+                        {
+                            globeHref &&
                             
                             <a rel='noopener noreferrer nofollow' target='_blank' href={globeHref} alt='website view '>
                                 <span
@@ -65,10 +84,6 @@ export default function ProjectsCard( {title, des, src, gitHref, globeHref, tech
                                     <FaGlobe />
                                 </span>
                             </a>
-
-                            :
-
-                            ""
                         }
                     </div>   
     

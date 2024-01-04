@@ -1,5 +1,5 @@
 import React from 'react';
-import {projectOne, projectTwo, projectThree, trivia, english, snake, snakeSim, hangman, hangman2, hangman3, weather, memory} 
+import {projectOne, projectTwo, projectThree, trivia, interactify, galleria, shoppy_mart, christmas, english, snake, snakeSim, hangman, hangman2, hangman3, weather, memory} 
 from '../../assets/index';
 import Title from '../layouts/Title';
 import ProjectsCard from './ProjectsCard';
@@ -23,6 +23,53 @@ export default function Projects() {
                 initial = {{opacity:0, scale: 1.1}}
                 whileInView = {{opacity:1, transition:{duration:.5}, scale:1}}
                 className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14 flex-grow items-baseline'>
+                <ProjectsCard  
+                    title="Interactify Connect"
+                    des= "Currently building a simple full-stack social networking application, facebook clone.
+                    It provides users with a platform to connect, share, and interact with friends in
+                    a seamless and intuitive manner"
+                    src={interactify}
+                    gitHref="https://github.com/rapha-pro/interactify"                    
+                    globeHref=""
+                    technologies= {["Node.js", "Express.js", "MongoDB", "React", "Bootstrap", "axios"]}
+                    space={0}
+                />
+                
+                <ProjectsCard  
+                    title="Galleria Webapp"
+                    des= "Created a gallery web application allowing artists to showcase their art, 
+                    as well as interact with other artists artworks on the platform"
+                    src={galleria}
+                    gitHref=""                    
+                    globeHref=""
+                    youtubeHref="https://youtu.be/BV4YvM95jKQ"
+                    technologies= {["Node.js", "Express.js", "MongoDB", "Pug", "Html", "css"]}
+                    space={0}
+                />
+
+                <ProjectsCard  
+                    title="Shoppy mart"
+                    des= "Developed a simulated online store web application that emulates fundamental
+                    store operations using JavaScript. The project included an interactive user interface
+                    and was undertaken as part of our web development assignment"
+                    src={shoppy_mart}
+                    gitHref=""                    
+                    globeHref=""
+                    technologies= {["Node.js", "Express.js", "MongoDB", "Pug", "Html", "css"]}
+                    space={0}
+                />
+
+                <ProjectsCard  
+                    title="Christmas Wish website"
+                    des= "Rendered a functional and responsive website interface, dedicated to 
+                    conveying Christmas and New Year wishes."
+                    src={christmas}
+                    gitHref="https://github.com/rapha-pro/christmas-static"                    
+                    globeHref="https://raphael-xmas-phi.vercel.app/"
+                    technologies= {["Html", "css", "javascript"]}
+                    space={0}
+                />
+
                 <ProjectsCard  
                     title="English Trivia"
                     des= "As part of my High School Project, I Implemented a trivia web app that gamified certain English lessons into
