@@ -23,7 +23,9 @@ export default function Projects() {
                 initial = {{opacity:0, scale: 1.1}}
                 whileInView = {{opacity:1, transition:{duration:.5}, scale:1}}
                 className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14 flex-grow items-baseline'>
-                <ProjectsCard  
+
+                {/* This Project on StandBy */}
+                {/* <ProjectsCard  
                     title="Internship Nest"
                     des= " Currently in the development of an internship finder application, 
                     consolidating diverse internship opportunities from across the web into a 
@@ -34,7 +36,7 @@ export default function Projects() {
                     globeHref=""
                     technologies= {["React", "Node.js", "Express.js", "MongoDB", "Tailwind"]}
                     space={0}
-                />
+                /> */}
                 
                 <ProjectsCard  
                     title="Galleria Webapp"

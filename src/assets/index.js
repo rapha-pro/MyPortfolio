@@ -35,6 +35,8 @@ import galleria from "./images/projects/galleria.png";
 import christmas from "./images/projects/christmas.png";
 import shoppy_mart from "./images/projects/shoppy_mart.png";
 import internship_nest from "./images/projects/internship-nest.png";
+import mainProfile from "./images/main_profile.jpg";
+import ford from "./images/ford.png";
 
 export {
   logo,
@@ -73,5 +75,7 @@ export {
   galleria,
   christmas,
   shoppy_mart,
-  internship_nest
+  internship_nest,
+  mainProfile,
+  ford
 };

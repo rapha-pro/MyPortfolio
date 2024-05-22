@@ -63,10 +63,11 @@ export default function Home() {
                     />
                 </h2>
                 <p className='text-base font-bodyFont leading-6 tracking-wide'>
-                I'm a second-year Computer Science student with a focus on Artificial Intelligence. 
+                I'm a third year Computer Science student with a focus on Artificial Intelligence. 
                 Skilled in Python and web technologies, I love crafting elegant code and creating user-friendly interfaces 
                 and web-apps.<br /><span className='leading-10'>Find more about me navigating my website.</span><br  />
-                <span className='leading-0'>Feel free to reach out if you'd like to collaborate, hire, or discuss about anything particular.</span>
+                <span className='leading-0'>Feel free to reach out on the <a href="#contact">Contact Section</a>,
+                if you'd like to collaborate, hire, or send an email about anything particular.</span>
                 </p>
             </div>
 
@@ -84,7 +85,7 @@ export default function Home() {
                       best skills in
                   </h2>
                   <div id="cube" className='-ml-2'>
-                      
+                    {/* cube here */}
                   </div>
               </div>
           </div>

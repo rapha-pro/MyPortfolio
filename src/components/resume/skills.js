@@ -22,24 +22,21 @@ function Skills () {
             />
             <Capacity  
               title = 'java'
-              percentage = {50}
-            />
-            <Capacity  
-              title = 'javascript'
-              percentage = {90}
-            />
-            <Capacity  
-              title = 'C'
               percentage = {40}
             />
             <Capacity  
-              title = 'C++'
-              percentage = {30}
+              title = 'javascript'
+              percentage = {85}
             />
             <Capacity  
-              title = 'MongoDB'
-              percentage = {70}
+              title = 'C'
+              percentage = {45}
             />
+            <Capacity  
+              title = 'C++'
+              percentage = {55}
+            />
+            
            
         </div>
 
@@ -54,26 +51,67 @@ function Skills () {
             <div className='w-full'>
               <Capacity  
                 title = 'Html and Css'
-                percentage = {80}
+                percentage = {75}
               />
               <Capacity  
                 title = 'React'
-                percentage = {60}
+                percentage = {45}
               />
               <Capacity  
                 title = 'Tailwind'
-                percentage = {60}
+                percentage = {55}
               />
               <Capacity  
                 title = 'Bootstrap'
-                percentage = {45}
+                percentage = {40}
               />
               <Capacity  
                 title = 'Django'
                 percentage = {20}
               />
+              <Capacity  
+                title = 'MongoDB'
+                percentage = {60}
+              />
             </div>
         </div>
+
+
+
+
+        <div className="w-full">
+          <ResumeTitles 
+              headingText={"Technical Tools"}
+              des={"technical skills"}
+            /> 
+          <div className='w-full'>
+            <Capacity  
+              title = 'Linux'
+              percentage = {30}
+            />
+            <Capacity  
+              title = 'AWS Cloud Practitioner'
+              percentage = {80}
+            />
+            <Capacity  
+              title = 'Git'
+              percentage = {40}
+            />
+            <Capacity  
+              title = 'GitHub'
+              percentage = {30}
+            />
+            <Capacity  
+              title = 'Jenkins'
+              percentage = {35}
+            />
+            <Capacity  
+              title = 'Jira'
+              percentage = {60}
+            />
+          </div>
+        </div>
+
 
         <div className=' block'>
             <ResumeTitles 
@@ -91,6 +129,9 @@ function Skills () {
               />
             </div>
         </div>
+
+
+
 
         
     </motion.div>

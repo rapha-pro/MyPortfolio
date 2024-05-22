@@ -60,10 +60,10 @@ export default function Navbar() {
                             <div>
                                 <img className='w-20' src={ mylogo } alt="logo" />
                                 <p className='text-sm text-gray-400 mt-6'>
-                                    I'm a second-year Computer Science student with a focus on Artificial Intelligence. 
+                                    I'm a third year Computer Science student with a focus on Artificial Intelligence. 
                                     Skilled in Python and web technologies, I love crafting elegant code and creating user-friendly interfaces 
                                     and web-apps.<br /><p className='pt-4'>Find more about me navigating my website.</p><br  />
-                                    <p className=''>Feel free to reach out if you'd like to collaborate, hire, or discuss about anything particular.</p>
+                                    <p className=''>Feel free to reach out on the <a href="#contact">Contact Section</a>, if you'd like to collaborate, hire, or discuss about anything particular.</p>
                                 </p>
                             </div>
                             <ul className='flex flex-col gap-4'>

@@ -1,5 +1,5 @@
 import React from "react";
-import { contactImg } from '../../assets/index';
+import { contactImg, mainProfile } from '../../assets/index';
 import Social from "../home/Social";
 import { motion} from 'framer-motion'
 
@@ -12,13 +12,13 @@ function ContactLeft (props) {
         p-4 lgl:p-8 justify-center shadow-shadowOne flex flex-col gap-8 justify-center'
     >
         <img 
-            className='w-full h-64 object-cover rounded-lg mb-4'
-            src={contactImg}
+            className='w-full h-64 object-contain rounded-lg mb-4 transform scale-90'
+            src={mainProfile}
             alt='contact'
         />
         <div className='flex flex-col gap-4'>
             <h3 className='text-3xl font-bold text-white capitalize font-titleFont'>raphaël onana</h3>
-            <p className='text-lg font-normal text-gray-400 font-titleFont'>Student Software Developer</p>
+            <p className='text-lg font-normal text-gray-400 font-titleFont'>Software Engineer</p>
             <p className='text-base text-gray-400 tracking-wide'>
                 Hi there, I hope you found this website UI friendly and quite interesting. I will be glad if you can leave a review
                 as I am constantly looking to upgrade this website to the best. Again, feel free to reach me out for any inquiries or job proposal.<br />

@@ -30,7 +30,7 @@ export default function Resume() {
                             setAchievementData(false) &
                             setExperienceData(false)
                         } 
-                        className={`${educationData ? "md:border-r md:border-r-gray-200 xl:border-r-designColor border-2 border-designColor rounded-lg" :
+                        className={`${educationData ? "md:border-r md:border-r-gray-100 xl:border-r-designColor border-2 border-designColor rounded-lg" :
                         "md:border-r md:border-r-gray-200 xl:border-r-transparent"} resumeLi`}
                     >
                         Education

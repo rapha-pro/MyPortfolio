@@ -39,8 +39,8 @@ function Footer() {
                 <div className='flex gap-4 items-center '>
                     
                     <div className='flex flex-col gap-1 text-center'>
-                        <p className='font-titleFont text-2xl text-designColor'>Raphaël Onana</p>
-                        <p className="text-xs text-gray-400 font-titleFont uppercase italic">Student Software Developer</p>
+                        <p className='font-bodyFont text-2xl text-designColor'>Raphaël Onana</p>
+                        <p className="text-xs text-gray-400 font-bodyFont uppercase italic">Software Engineer</p>
                     </div>
 
                 </div>

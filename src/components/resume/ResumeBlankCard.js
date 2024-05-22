@@ -6,6 +6,11 @@ function ResumeBlankCard ( {title, coursesList} ) {
     const CourseList = () => {
         return (
             <div className=''>
+                {(title === "year i") ? 
+                  <div>
+                    <h5 className="mb-8 group-hover:text-white duration-300 italic">Hover to See Grades</h5>
+                  </div> : ""}
+
                 <h3 className='text-xl md:text-2xl font-semibold group-hover:text-white duration-300 mb-8 capitalize'>{title}</h3>
                 <ul className='flex flex-col gap-6'>
                     {Object.keys(coursesList).map((course, index) => (
