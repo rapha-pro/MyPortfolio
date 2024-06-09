@@ -18,7 +18,7 @@ function Skills () {
             /> 
             <Capacity  
               title = 'python'
-              percentage = {40}
+              percentage = {50}
             />
             <Capacity  
               title = 'java'
@@ -34,7 +34,7 @@ function Skills () {
             />
             <Capacity  
               title = 'C++'
-              percentage = {55}
+              percentage = {45}
             />
             
            
@@ -95,19 +95,19 @@ function Skills () {
             />
             <Capacity  
               title = 'Git'
-              percentage = {40}
+              percentage = {70}
             />
             <Capacity  
               title = 'GitHub'
-              percentage = {30}
+              percentage = {70}
             />
             <Capacity  
               title = 'Jenkins'
-              percentage = {35}
+              percentage = {60}
             />
             <Capacity  
               title = 'Jira'
-              percentage = {60}
+              percentage = {80}
             />
           </div>
         </div>

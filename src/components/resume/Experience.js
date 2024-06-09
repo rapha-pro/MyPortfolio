@@ -17,14 +17,29 @@ function Experience () {
                 des={"features"}
             />  
             
-            <div className='mt-6 lgl:mt-14 w-full sm:h-[1100] md:h-[880px] border-l-[6px] border-l-black 
+            <div className='mt-6 lgl:mt-14 w-full sm:h-[1400] md:h-[1250px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-6'>
        
                     <ResumeCard  
                         title="Software Automation Engineer"
                         subTitle="Kanata, ON"
-                        des="Working in the Test Automation department, building tests in python, and work with nodes and 
-                        various built Systems"
+                        des=
+                            <ul className="flex flex-col gap-4">
+                            <li>
+                                Set up and maintained new test nodes, ensuring optimal lab 
+                                functionality and readiness
+                            </li>
+                            <li>
+                                Developed and sustained an automated test framework, including tools and 
+                                scripts, to streamline testing processes and improve efficiency.
+                            </li>
+                            <li>
+                                Collaborated with development and test teams, conducting automated test
+                                 executions, analyzing results, identifying root causes of issues, 
+                                 validating fixes, and contributing to agile scrum development sprints
+                            </li>
+                        </ul>
+                        
                         result="Internship"
                         source={ford}
                         height="h-1/2"
@@ -40,7 +55,7 @@ function Experience () {
                 headingText={"Other Experience"}
                 des={"features"}
             /> 
-            <div className='mt-12 lgl:mt-14 w-full h-[1100px] border-l-[6px] border-l-black 
+            <div className='mt-12 lgl:mt-14 w-full h-[1200px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
        
                 <div className="w-full h-1/2 group flex mt-32">
