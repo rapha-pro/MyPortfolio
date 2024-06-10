@@ -20,8 +20,7 @@ function Education () {
         "Abstract Data Types and Algorithms": ["Java", "A+"],
         "Web Development & Databases": ["Nodejs, Expressjs, MongoDB", "A+"],
         "Intro to Software Engineering": ["C++", "A+"],
-        "Discrete Maths II": ["", "A+"],
-        "Calculus & Statistics III": ["", "A+"]
+        "Calculus & Statistics III, Discrete Maths II": ["", "A+"]
 
     }
 
