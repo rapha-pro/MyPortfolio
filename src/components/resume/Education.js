@@ -68,7 +68,7 @@ function Education () {
                 headingText={"Courses"}
                 des={"2022 - Present"}
             />
-            <div className='mt-6 lgl:mt-14 w-full lgl:h-[1300px] xl:h-[1000px] border-l-[6px] border-l-black 
+            <div className='mt-6 lgl:mt-14 w-full lgl:h-[1400px] xl:h-[1100px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
                 <ResumeBlankCard 
                     title="year i" 

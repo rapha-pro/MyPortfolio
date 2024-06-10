@@ -21,7 +21,7 @@ function Experience () {
             border-opacity-30 flex flex-col gap-6'>
        
                     <ResumeCard  
-                        title="Software Automation Engineer"
+                        title="Test Automation Engineer"
                         subTitle="Kanata, ON"
                         des=
                             <ul className="flex flex-col gap-4">
