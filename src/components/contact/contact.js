@@ -62,7 +62,7 @@ function Contact (props) {
 
     console.log("normally sent");
 
-    emailjs.sendForm('service_mgkhnb9', 'template_iiia6jy', form.current, '_7aUTVC31iErlK7fk')
+    emailjs.sendForm('service_8b1jweq', 'template_iiia6jy', form.current, '_7aUTVC31iErlK7fk')
       .then((result) => {
           window.location.reload()  //This is to reload the page (since e.preventDefault() cancelled that behavior) 
       }, (error) => {
