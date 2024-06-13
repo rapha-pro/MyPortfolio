@@ -46,7 +46,7 @@ function Contact (props) {
     } else {
         setErrorMsg("");
         setSuccessMsg(
-        `Thank you ${name}! your message has been sent Succesfully!`
+        `Thank you ${name}! your message has been sent Successfully!`
         );
         sendEmail(e);
         console.log(name, phoneNumber, email, subject, message);
