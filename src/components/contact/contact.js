@@ -16,7 +16,6 @@ function Contact (props) {
 
   const form = useRef();
 
-
   const nameErrorMsg    = "name is required!";
   const emailErrorMsg   = "email is required!";
   const subjectErrorMsg = "A subject is required!";
@@ -62,7 +61,7 @@ function Contact (props) {
 
     console.log("normally sent");
 
-    emailjs.sendForm('service_8b1jweq', 'template_iiia6jy', form.current, '_7aUTVC31iErlK7fk')
+    emailjs.sendForm('service_8b1jweq', 'template_iiia6jy', form.current, "6u8kc2bjFJySoOXaE")
       .then((result) => {
           window.location.reload()  //This is to reload the page (since e.preventDefault() cancelled that behavior) 
       }, (error) => {

@@ -25,9 +25,8 @@ function ContactLeft (props) {
                 <span className='leading-10'>Hope to hear from you soon!</span>
 
             </p>
-            <p className='text-base text-gray-400 flex items-center gap-2 capitalize'>phone: <span className='text-lightText'>+1 613 920 5228</span></p>
             <p className='text-base text-gray-400 flex items-center gap-2 capitalize'>email: {" "} <span className='text-lightText lowercase'>onanaraphaelnathan@gmail.com</span></p>
-            <p className='text-base text-gray-400 flex items-center gap-2 capitalize'>Location: {" "} <span className='text-lightText capitalize'>Ottawa, Canada</span></p>
+            <p className='text-base text-gray-400 flex items-center gap-2 capitalize'>Location: {" "} <span className='text-lightText capitalize'>Canada</span></p>
         </div>
 
         <div>
