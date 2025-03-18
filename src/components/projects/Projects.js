@@ -53,8 +53,7 @@ export default function Projects() {
                 <ProjectsCard  
                     title="Shoppy mart"
                     des= "Developed a simulated online store web application that emulates fundamental
-                    store operations using JavaScript. The project included an interactive user interface
-                    and was undertaken as part of our web development assignment"
+                    store operations with RESTFUL Apis in MongoDB"
                     src={shoppy_mart}
                     gitHref=""                    
                     globeHref=""
@@ -65,7 +64,7 @@ export default function Projects() {
                 <ProjectsCard  
                     title="Christmas Wish website"
                     des= "Rendered a functional and responsive website interface, dedicated to 
-                    conveying Christmas and New Year wishes."
+                    conveying Christmas and New Year wishes"
                     src={christmas}
                     gitHref="https://github.com/rapha-pro/christmas-static"                    
                     globeHref="https://raphael-xmas-phi.vercel.app/"
@@ -75,9 +74,10 @@ export default function Projects() {
 
                 <ProjectsCard  
                     title="English Trivia"
-                    des= "As part of my High School Project, I Implemented a trivia web app that gamified certain English lessons into
+                    des= "This is my first website. As part of my high school project, I
+                    Implemented a trivia web app that gamified some English lessons into
                     interactive quizzes. The app aimed to make learning engaging and fun for students
-                    whil fostering an understanding of the subject."
+                    while fostering an understanding of the topics"
                     src={english}
                     gitHref="https://github.com/rapha-pro/English-Trivia"                    
                     globeHref=""
@@ -87,8 +87,7 @@ export default function Projects() {
 
                 <ProjectsCard  
                     title="Purblace place Memory Game"
-                    des= " Implemented a basic version, simulating the Purblace Place memory game using React. 
-                    The React implementation provides an interactive and enjoyable user experience."
+                    des= " Implemented a basic version, simulating the Purblace Place memory game using React"
                     src={memory}
                     gitHref="https://github.com/rapha-pro/Memory-game"
                     globeHref=""
@@ -100,7 +99,7 @@ export default function Projects() {
                     title="Weather App"
                     des= "Developed a user-friendly GUI program using Python and Tkinter that 
                      utilizes an API to provide accurate weather information for multiple cities. The application 
-                     ensures easy access to essential weather details."
+                     ensures easy access to essential weather details"
                     src={weather}
                     gitHref="https://github.com/rapha-pro/Weather-app"
                     globeHref=""
@@ -109,7 +108,7 @@ export default function Projects() {
                 />
                 <ProjectsCard  
                     title="Snake-Ladder game Simulation"
-                    des= "As part of my course assignment, I Programmed a simple two-players simulation navigating
+                    des= "As part of a course project in first year, I Programmed a simple two-players simulation navigating
                     the snake-ladder game with pygame library"
                     src={snakeSim}
                     gitHref="https://github.com/rapha-pro/Snake-Ladder-Simulation"
@@ -120,7 +119,7 @@ export default function Projects() {
                 <ProjectsCard  
                     title="Hangman Game"
                     des= "Programmed a GUI, a modern version of the Hangman game with a visual and interactive User
-                     interface to make the game appealing and entertaining for the user."
+                     interface to make the game appealing and entertaining for the user"
                     src={hangman3}
                     gitHref="https://github.com/rapha-pro/Hangman"
                     globeHref=""
@@ -129,8 +128,8 @@ export default function Projects() {
                 />
                 <ProjectsCard  
                     title="Snake Game"
-                    des= "I designed and programmed a user-friendly UI snake game that includes a scoring system 
-                    to track the player's performance."
+                    des= "I designed and programmed a user-friendly snake game that includes a scoring system 
+                    to track the player's performance"
                     src={snake}
                     gitHref="https://github.com/rapha-pro/Snake-game"
                     globeHref=""
