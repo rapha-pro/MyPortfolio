@@ -132,12 +132,12 @@ function Testimonial() {
 
                         
                         <TextCard
-                            ReviewTitle="Impressive Tech Showcase"
-                            subTitle="July 29 2023"
+                            ReviewTitle="Impressive, Keep it up!"
+                            subTitle="July 29, 2023"
                             numberOfStars={5}
                             description="
-                                Wow, nice website! The UI is amazing. The seamless navigation and visually appealing design make it a pleasure to explore.
-                                I appreciate the engaging content that kept me hooked. Keep up the fantastic work!
+                                Nice website Raphaël! I'm amazed by the UI. From the design to navigation, all sections makes it a pleasure to explore, 
+                                especially the resume part. Keep up the fantastic work!
                             "
                         />
      
