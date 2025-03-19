@@ -40,7 +40,7 @@ function Education () {
                     title="Bachelor Computer Science in AI/ML"
                     subTitle="Ottawa, ON"
                     result = "11.75/12"
-                    des="I'm a current third year student pursing a Bachelor's Degree in Computer Science in
+                    des="Third year student pursing a Bachelor's Degree in Computer Science in
                     the stream of Artificial Intelligence and Machine Learning while Completing my
                     Minor in Maths and Statistics."
                     source={carleton}

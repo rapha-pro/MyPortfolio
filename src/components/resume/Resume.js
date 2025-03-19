@@ -8,10 +8,10 @@ import { useState } from "react";
 
 export default function Resume() {
 
-    const [educationData, setEducationData] = useState(true);
+    const [educationData, setEducationData] = useState(false);
     const [skillData, setSkillData] = useState(false);
     const [achievementData, setAchievementData] = useState(false);
-    const [experienceData, setExperienceData] = useState(false);
+    const [experienceData, setExperienceData] = useState(true);
 
     return (
         <section
@@ -25,15 +25,15 @@ export default function Resume() {
                 <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 ">
                     <li 
                         onClick={()=>
-                            setEducationData(true) &
+                            setEducationData(false) &
                             setSkillData(false) &
                             setAchievementData(false) &
-                            setExperienceData(false)
+                            setExperienceData(true)
                         } 
-                        className={`${educationData ? "md:border-r md:border-r-gray-100 xl:border-r-designColor border-2 border-designColor rounded-lg" :
-                        "md:border-r md:border-r-gray-200 xl:border-r-transparent"} resumeLi`}
+                        className={`${experienceData ? "md:border-r md:border-r-gray-200 xl:border-r-designColor border-2 border-designColor rounded-lg" :
+                         "md:border-r md:border-r-gray-200 xl:border-r-transparent"} resumeLi`}
                     >
-                        Education
+                        Experience
                     </li>
                     <li 
                         onClick={()=>
@@ -48,15 +48,15 @@ export default function Resume() {
                     </li>
                     <li 
                         onClick={()=>
-                            setEducationData(false) &
+                            setEducationData(true) &
                             setSkillData(false) &
                             setAchievementData(false) &
-                            setExperienceData(true)
+                            setExperienceData(false)
                         } 
-                        className={`${experienceData ? "md:border-r md:border-r-gray-200 xl:border-r-designColor border-2 border-designColor rounded-lg" :
-                         "md:border-r md:border-r-gray-200 xl:border-r-transparent"} resumeLi`}
+                        className={`${educationData ? "md:border-r md:border-r-gray-100 xl:border-r-designColor border-2 border-designColor rounded-lg" :
+                        "md:border-r md:border-r-gray-200 xl:border-r-transparent"} resumeLi`}
                     >
-                        Experience
+                        Education
                     </li>
                     <li 
                         onClick={()=>

@@ -18,11 +18,15 @@ function Skills () {
             /> 
             <Capacity  
               title = 'python'
-              percentage = {50}
+              percentage = {75}
             />
             <Capacity  
               title = 'java'
               percentage = {40}
+            />
+            <Capacity  
+              title = 'Typescript'
+              percentage = {65}
             />
             <Capacity  
               title = 'javascript'
@@ -30,11 +34,11 @@ function Skills () {
             />
             <Capacity  
               title = 'C'
-              percentage = {45}
+              percentage = {50}
             />
             <Capacity  
               title = 'C++'
-              percentage = {45}
+              percentage = {60}
             />
             
            
@@ -50,20 +54,24 @@ function Skills () {
             /> 
             <div className='w-full'>
               <Capacity  
+                title = 'Nextjs'
+                percentage = {55}
+              />
+              <Capacity  
+                title = 'React'
+                percentage = {65}
+              />
+              <Capacity  
+                title = 'Tailwind'
+                percentage = {75}
+              />
+              <Capacity  
                 title = 'Html and Css'
                 percentage = {75}
               />
               <Capacity  
-                title = 'React'
-                percentage = {45}
-              />
-              <Capacity  
-                title = 'Tailwind'
-                percentage = {55}
-              />
-              <Capacity  
                 title = 'Bootstrap'
-                percentage = {40}
+                percentage = {80}
               />
               <Capacity  
                 title = 'Django'
@@ -86,27 +94,31 @@ function Skills () {
             /> 
           <div className='w-full'>
             <Capacity  
+              title = 'Github actions'
+              percentage = {80}
+            />
+              <Capacity  
+                title = 'Git/GitHub'
+                percentage = {80}
+              />
+            <Capacity  
               title = 'Linux'
+              percentage = {50}
+            />
+              <Capacity  
+                title = 'Jenkins'
+                percentage = {40}
+              />
+            <Capacity  
+              title = 'Docker'
               percentage = {30}
             />
             <Capacity  
-              title = 'AWS Cloud Practitioner'
+              title = 'Azure DevOps'
               percentage = {80}
             />
             <Capacity  
-              title = 'Git'
-              percentage = {70}
-            />
-            <Capacity  
-              title = 'GitHub'
-              percentage = {70}
-            />
-            <Capacity  
-              title = 'Jenkins'
-              percentage = {60}
-            />
-            <Capacity  
-              title = 'Jira'
+              title = 'AWS Cloud Practitioner'
               percentage = {80}
             />
           </div>

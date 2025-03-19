@@ -17,26 +17,50 @@ function Experience () {
                 des={"features"}
             />  
             
-            <div className='mt-6 lgl:mt-14 w-full sm:h-[1400] md:h-[1250px] border-l-[6px] border-l-black 
+            <div className='mt-6 lgl:mt-14 w-full sm:h-[1400] md:h-[1450px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-6'>
        
+                    
+                    <ResumeCard  
+                        title="Software Designer"
+                        subTitle="Montreal, Quebec"
+                        des=
+                        <ul className="flex flex-col gap-4">
+                            <li>
+                                Leading the migration of CI/CD pipelines from Azure DevOps Server Pipelines to GitHub Actions by creating a detailed
+                                migration plan to support the company's transition to GitHub Enterprise
+                            </li>
+                            <li>
+                                Integrated the GitHub Actions Importer into existing workflows, achieving up to 80% accuracy in pipeline translation
+                            </li>
+                            <li>
+                                Contributing to designing and implementing embedded software for autonomous drilling machine systems, utilizing Linux bash
+                                and docker in a scaled Agile team environment.
+                            </li>
+                        </ul>
+                        
+                        result="Internship"
+                        source={""}
+                        height="h-1/2"
+                    />
+
+                    
                     <ResumeCard  
                         title="Test Automation Engineer"
-                        subTitle="Kanata, ON"
+                        subTitle="Ottawa, Ontario"
                         des=
-                            <ul className="flex flex-col gap-4">
+                        <ul className="flex flex-col gap-4">
                             <li>
-                                Set up and maintained new test nodes, ensuring optimal lab 
-                                functionality and readiness
+                                Developed a pipeline to streamline logging into nodes, processing device data, and generating JSON files, significantly
+                                improving efficiency and saving hours of work
                             </li>
                             <li>
-                                Developed and sustained an automated test framework, including tools and 
-                                scripts, to streamline testing processes and improve efficiency.
+                                Demonstrated leadership by mentoring a new intern, helping acclimate to the team's workflows and tools. 
+                                Provided guidance on using automation tools, debugging processes, and effective lab management
                             </li>
                             <li>
-                                Collaborated with development and test teams, conducting automated test
-                                 executions, analyzing results, identifying root causes of issues, 
-                                 validating fixes, and contributing to agile scrum development sprints
+                                Gained practical experience with several automotive and electronic hardware such as Sync Infotainment, Telematics
+                                hardware, Arduino, while setting up FNV (Fully Networked Vehicles) systems for testing
                             </li>
                         </ul>
                         
@@ -55,7 +79,7 @@ function Experience () {
                 headingText={"Other Experience"}
                 des={"features"}
             /> 
-            <div className='mt-12 lgl:mt-14 w-full h-[1200px] border-l-[6px] border-l-black 
+            <div className='mt-12 lgl:mt-14 w-full h-[1400px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
        
                 <div className="w-full h-1/2 group flex mt-32">
