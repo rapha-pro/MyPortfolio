@@ -5,6 +5,7 @@ import Social from "../home/Social";
 import { Link } from 'react-scroll';
 import { FiMenu } from 'react-icons/fi';
 import { MdClose } from 'react-icons/md';
+import { ABOUT_TEXT } from '../../constants/aboutme';
 
 
 export default function Navbar() {
@@ -59,12 +60,15 @@ export default function Navbar() {
                         <div className='flex flex-col gap-8 py-2 relative'>
                             <div>
                                 <img className='w-20' src={ mylogo } alt="logo" />
-                                <p className='text-sm text-gray-400 mt-6'>
-                                    I'm a third year Computer Science student with a focus on Artificial Intelligence. 
-                                    Skilled in Python and web technologies, I love crafting elegant code and creating user-friendly interfaces 
-                                    and web-apps.<br /><p className='pt-4'>Find more about me navigating my website.</p><br  />
-                                    <p className=''>Feel free to reach out on the <a href="#contact">Contact Section</a>, if you'd like to collaborate, hire, or discuss about anything particular.</p>
-                                </p>
+                                <div className='text-sm text-gray-300 mt-6 leading-6 tracking-wide flex flex-col gap-2'>
+                                    <p> 
+                                        { ABOUT_TEXT[1] }
+                                        <span className='font-bold italic'> { ABOUT_TEXT[0] }</span> <br />
+                                    </p>
+                                    <p>{ ABOUT_TEXT[2] }</p>
+                                    <p className='pt-1'> { ABOUT_TEXT[3] } </p>
+                                    <p> { ABOUT_TEXT[4] } </p>
+                                </div>
                             </div>
                             <ul className='flex flex-col gap-4'>
                                 {

@@ -1,12 +1,11 @@
 import {React, useEffect} from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import { PerspectiveCamera, RenderTexture } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
-import * as THREE from 'three';
-import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import Cube from '../../cube';
-import Social from './Social';
+import * as THREE from 'three'
+import { OrbitControls } from "three/addons/controls/OrbitControls.js"
+import Cube from '../../cube'
+import Social from './Social'
 import { motion } from 'framer-motion'
+import { ABOUT_TEXT } from '../../constants/aboutme';
 
 
 export default function Home() {
@@ -62,13 +61,17 @@ export default function Home() {
                         cursorColor="#ff014f"
                     />
                 </h2>
-                <p className='text-base font-bodyFont leading-6 tracking-wide'>
-                I'm a third year Computer Science student with a focus on Artificial Intelligence. 
-                Skilled in Python and web technologies, I love crafting elegant code and creating user-friendly interfaces 
-                and web-apps.<br /><span className='leading-10'>Find more about me navigating my website.</span><br  />
-                <span className='leading-0'>Feel free to reach out on the <a href="#contact">Contact Section</a>,
-                if you'd like to collaborate, hire, or send an email about anything particular.</span>
-                </p>
+                <div className='text-base font-bodyFont leading-6 tracking-wide flex flex-col gap-2'>
+                    <p> 
+                        { ABOUT_TEXT[1] }
+                        <span className='font-bold italic'> { ABOUT_TEXT[0] }</span> <br />
+                    </p>
+                    <p>{ ABOUT_TEXT[2] }</p>
+                    <p className='pt-1'> { ABOUT_TEXT[3] } </p>
+                    <p> { ABOUT_TEXT[4] } </p>
+                    <p className='leading-0'>And feel free to reach out on the <a href="#contact">Contact Section</a>,
+                    if you'd like to collaborate, hire, or send an email about anything particular.</p>
+                </div>
             </div>
 
           <div className='flex flex-col gap-6 md:flex-row lgl:flex-row md:gap-[8.5rem]  lgl:gap-10 xl:gap-48'>

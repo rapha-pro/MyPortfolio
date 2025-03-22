@@ -63,8 +63,8 @@ function Education () {
 
         {/* THIS IS THE SECOND COLUM */}
 
-        <div className='w-full'>
-        <ResumeTitles 
+        <div className='w-full mt-5'>
+            <ResumeTitles 
                 headingText={"Courses"}
                 des={"2022 - Present"}
             />

@@ -74,8 +74,8 @@ export default function Projects() {
 
                 <ProjectsCard  
                     title="English Trivia"
-                    des= "This is my first website. As part of my high school project, I
-                    Implemented a trivia web app that gamified some English lessons into
+                    des= "This is my first website. As part of my final high school project, I
+                    Implemented a trivia web app that gamified my English lessons into
                     interactive quizzes. The app aimed to make learning engaging and fun for students
                     while fostering an understanding of the topics"
                     src={english}
