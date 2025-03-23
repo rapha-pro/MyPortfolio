@@ -63,11 +63,11 @@ function Skills () {
               />
               <Capacity  
                 title = 'Tailwind'
-                percentage = {75}
+                percentage = {90}
               />
               <Capacity  
                 title = 'Html and Css'
-                percentage = {75}
+                percentage = {85}
               />
               <Capacity  
                 title = 'Bootstrap'
@@ -107,7 +107,7 @@ function Skills () {
             />
               <Capacity  
                 title = 'Jenkins'
-                percentage = {40}
+                percentage = {50}
               />
             <Capacity  
               title = 'Docker'
@@ -115,7 +115,7 @@ function Skills () {
             />
             <Capacity  
               title = 'Azure DevOps'
-              percentage = {80}
+              percentage = {90}
             />
             <Capacity  
               title = 'AWS Cloud Practitioner'

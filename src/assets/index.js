@@ -1,6 +1,4 @@
-import logo from "./images/logo.png";
 import mylogo from "./images/mylogo.png";
-import bannerImg from "./images/bannerImg.png";
 import profile from "./images/myprofile.jpg";
 import profile2 from "./images/myprofile-1.jpg";
 import profile3 from "./images/myprofile-2.jpg";
@@ -36,10 +34,11 @@ import christmas from "./images/projects/christmas.png";
 import shoppy_mart from "./images/projects/shoppy_mart.png";
 import internship_nest from "./images/projects/internship-nest.png";
 import mainProfile from "./images/main_profile.jpg";
+import mcdonalds from "./images/mcdonalds.png";
 import ford from "./images/ford.png";
+import caterpillar from "./images/caterpillar.png";
 
 export {
-  logo,
   java,
   python,
   html,
@@ -51,7 +50,6 @@ export {
   profile2,
   profile3,
   mylogo,
-  bannerImg,
   projectOne,
   projectTwo,
   projectThree,
@@ -77,5 +75,7 @@ export {
   shoppy_mart,
   internship_nest,
   mainProfile,
-  ford
+  mcdonalds,
+  ford,
+  caterpillar
 };

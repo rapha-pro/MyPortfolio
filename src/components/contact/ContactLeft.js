@@ -20,8 +20,8 @@ function ContactLeft (props) {
             <h3 className='text-3xl font-bold text-white capitalize font-titleFont'>raphaël onana</h3>
             <p className='text-lg font-normal text-gray-400 font-titleFont'>Software Engineer</p>
             <p className='text-base text-gray-400 tracking-wide'>
-                Hi there, I hope you found this website UI friendly and quite interesting. I will be glad if you can leave a review
-                as I am constantly looking to upgrade this website to the best. Again, feel free to reach me out for any inquiries or job proposal.<br />
+                Hi there, I hope you found my website UI friendly and engaging. I will be glad if you can leave a review
+                as I am always looking to improve and enhance the site. Again, feel free to reach me out for any inquiries or job proposal.<br />
                 <span className='leading-10'>Hope to hear from you soon!</span>
 
             </p>

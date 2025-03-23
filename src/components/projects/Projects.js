@@ -15,7 +15,7 @@ export default function Projects() {
             <div 
                 className='flex justify-center text-center'>
             <Title 
-                title="view recent" 
+                title="view" 
                 description="Projects"  
             />
             </div>

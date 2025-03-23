@@ -1,7 +1,7 @@
 import React from "react"
 import { carleton } from "../../assets/index";
 
-function ResumeCard ( {title, subTitle, result, des, source, height} ) {
+function ResumeCard ( {title, subTitle, result, des, source, height, width = "sm:w-[14rem] md:w-[20rem]" } ) {
   return (
     <div className={`w-full ${height} group flex mt-10`}>
       <div className='w-10 h-[6px] bgOpacity mt-16 relative'>
@@ -23,7 +23,7 @@ function ResumeCard ( {title, subTitle, result, des, source, height} ) {
       >
         {
           source ? 
-        <div className='relative sm:w-[14rem] md:w-[20rem] -mb-10 -top-4'>
+        <div className={`relative ${width} -mb-5 -top-4`}>
             <img className='text-gray-300' src={source} alt='carleton logo' />
         </div> 
 

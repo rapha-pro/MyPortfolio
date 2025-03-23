@@ -2,9 +2,7 @@ import React, { useEffect } from "react";
 import { mylogo } from "../../assets/index";
 import Social from "../home/Social";
 import Cube from "../../cube";
-import { PerspectiveCamera, RenderTexture } from '@react-three/drei'
 import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import { Canvas } from '@react-three/fiber'
 import * as THREE from 'three';
 
 function Footer() {
@@ -38,8 +36,8 @@ function Footer() {
             <div className='flex flex-col gap-10 justify-center ml-8 lgl:ml-20 '>
                 <div className='flex gap-4 items-center '>
                     
-                    <div className='flex flex-col gap-1 text-center'>
-                        <p className='font-bodyFont text-2xl text-designColor'>Raphaël Onana</p>
+                    <div className='flex flex-col gap-1 text-center font-titleFont'>
+                        <p className='text-2xl text-blue-600 font-bold'>Raphaël Onana</p>
                         <p className="text-xs text-gray-400 font-bodyFont uppercase italic">Software Engineer</p>
                     </div>
 

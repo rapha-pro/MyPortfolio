@@ -1,9 +1,8 @@
 import React from "react";
 import { motion } from 'framer-motion'
 import ResumeCard from "./ResumeCard";
-import ResumeBlankCard from "./ResumeBlankCard";
 import ResumeTitles from "./ResumeTitles";
-import { ford } from "../../assets/index";
+import { ford, caterpillar, mcdonalds } from "../../assets/index";
 
 function Experience () {
   return (
@@ -38,9 +37,9 @@ function Experience () {
                                 and docker in a scaled Agile team environment.
                             </li>
                         </ul>
-                        
+                        width = "sm:w-[14rem] md:w-[20rem] -mb-[4rem] -ml-5" 
                         result="Internship"
-                        source={""}
+                        source={caterpillar}
                         height="h-1/2"
                     />
 
@@ -63,7 +62,7 @@ function Experience () {
                                 hardware, Arduino, while setting up FNV (Fully Networked Vehicles) systems for testing
                             </li>
                         </ul>
-                        
+                        width = "sm:w-[9rem] md:w-[13rem] mb-5"
                         result="Internship"
                         source={ford}
                         height="h-1/2"
@@ -100,6 +99,10 @@ function Experience () {
                         className='w-full bg-black bg-opacity-20 duration-300 flex flex-col justify-center 
                         rounded-lg p-4 lgl:px-10 gap-6 lgl:gap-5 shadow-shadowOne xl:mt-0'
                     >
+                         <div className={`relative sm:w-24 md:w-36 -mb-5 -top-4`}>
+                            <img className='text-gray-300' src={mcdonalds} alt='carleton logo' />
+                        </div> 
+
                         <div className='flex flex-col lgl:flex-row justify-between lgl:items-center gap-4 p-2 lgl:gap-0'>
                             <div>
                                 <h3 className='text-xl md:text-2xl font-semibold group-hover:text-white duration-300'>McDonald's</h3>

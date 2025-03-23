@@ -1,6 +1,6 @@
 import React from 'react';
 import { RiComputerFill } from 'react-icons/ri';
-import { FaMobile, FaGlobe } from 'react-icons/fa';
+import { FaGlobe, FaMobile } from 'react-icons/fa';
 import { AiFillAppstore } from 'react-icons/ai';
 import Title from '../layouts/Title';
 import Card from './Card';
@@ -20,17 +20,17 @@ export default function Feature() {
       >
         <Card 
           title="Web Development" 
-          des="Since the creation, of my very first website ('English Trivia'), i had been driven 
-          to learn a few web technologies, and which has further led me to building this website"
+          des="Since the creation of my very first website (English Trivia), i have been driven 
+          to learn web dev, which has further led me to building this website"
           icon={<RiComputerFill  />}
           done={true}
           lengthy = {false}
         />
         <Card 
           title="App Development" 
-          des="I had been always amazed by how some lines of codes could be compiled and executed to create an app.
-          Since then, i had always had a high interest learning such versatile technologies."
-          icon={<AiFillAppstore />}
+          des="I have always been amazed by how some lines of codes could compile and executed to create an app.
+          Since then, i have always had a high interest learning such versatile technologies, and buid one myself"
+          icon={<FaMobile />}
           done={false}
           lengthy = {false}
         />
