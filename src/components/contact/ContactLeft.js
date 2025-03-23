@@ -1,5 +1,5 @@
 import React from "react";
-import { contactImg, mainProfile } from '../../assets/index';
+import { contactImg, mainProfile, contactMe } from '../../assets/index';
 import Social from "../home/Social";
 import { motion} from 'framer-motion'
 
@@ -8,12 +8,12 @@ function ContactLeft (props) {
     <motion.div 
         initial = {{opacity:0, translateY: 25}}
         whileInView = {{opacity:1, transition:{duration:1.2}, translateY: 0}}
-        className='w-full lgl:w-[35%] h-full bg-gradien-to-r from-[#1e2024] to-[#23272b] rounded-md 
+        className='w-[20rem] lgl:w-[35%] h-full bg-gradien-to-r from-[#1e2024] to-[#23272b] rounded-md 
         p-4 lgl:p-8 justify-center shadow-shadowOne flex flex-col gap-8 justify-center'
     >
         <img 
-            className='w-full h-64 object-contain rounded-lg mb-4 transform scale-90'
-            src={mainProfile}
+            className='w-full object-contain rounded-lg mb-4 transform scale-90'
+            src={contactMe}
             alt='contact'
         />
         <div className='flex flex-col gap-4'>

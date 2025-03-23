@@ -37,6 +37,8 @@ import mainProfile from "./images/main_profile.jpg";
 import mcdonalds from "./images/mcdonalds.png";
 import ford from "./images/ford.png";
 import caterpillar from "./images/caterpillar.png";
+import contactMe from "./images/contact-me.jpg";
+import review from "./images/review.jpg";
 
 export {
   java,
@@ -77,5 +79,7 @@ export {
   mainProfile,
   mcdonalds,
   ford,
-  caterpillar
+  caterpillar,
+  contactMe,
+  review
 };

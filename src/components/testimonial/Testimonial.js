@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Title from "../layouts/Title";
 import Slider from "react-slick";
-import { testimonialOne, testimonialTwo, quote, male, female } from "../../assets/index";
+import { testimonialOne, testimonialTwo, quote, male, female, review } from "../../assets/index";
 import { RiStarFill } from 'react-icons/ri';
 import { HiArrowRight, HiArrowLeft } from 'react-icons/hi';
 import LeftCard from "./LeftCard";
@@ -124,7 +124,7 @@ function Testimonial() {
                     <div className='w-full h-auto flex flex-col gap-10 lgl:gap-0 lgl:flex-row justify-between items-stretch'>
 
                         <LeftCard 
-                            imageSrc={male}
+                            imageSrc={review}
                             name=""
                             username=""
                             title=""
