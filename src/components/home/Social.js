@@ -1,41 +1,47 @@
 import React from "react";
-import { FaFacebookF, FaLinkedinIn, FaReact, FaJava } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { BsGithub } from 'react-icons/bs';
-import { siPython, siHtml5} from 'react-icons/si';
 
-function Social (props) {
+function Social () {
   return (
     <div className='flex gap-4'>
-        <a rel='noopener noreferrer nofollow' target='_blank' href='https://github.com/rapha-pro' 
-          alt='twitter'
-          className='hover:-translate-y-1 duration-300'
-      >
-            <span className='socialCard'>
-                
-                <BsGithub className="bannerIcon"/>
-            </span>
-        </a>
-        <a rel='noopener noreferrer nofollow' target='_blank' 
-          href='https://www.linkedin.com/in/raphaelonana/'
-          alt='linkedin'
-          className='hover:-translate-y-1 duration-300'
-        >
-            <span className='socialCard'>
-                <FaLinkedinIn  className="bannerIcon"/>
-            </span>
-        </a>
-        <a rel='noopener noreferrer nofollow' target='_blank' 
-          href='https://twitter.com/rapha_pro_' 
-          alt='twitter'
-          className='hover:-translate-y-1 duration-300'
-      >
-            <span className='socialCard'>
-                <FaXTwitter className="bannerIcon"/>
-            </span>
-        </a>
+		<SocialIcon
+			href="https://github.com/rapha-pro"
+			iconName="Github"
+			icon={BsGithub}
+			iconClass="hover:text-gray-600"
+		/>
+		<SocialIcon
+			href="https://www.facebook.com/raphaelonana/"
+			iconName="LinkedIn"
+			icon={FaLinkedinIn}
+			iconClass="hover:text-blue-600"
+		/>
+		<SocialIcon
+			href="https://twitter.com/rapha_pro_"
+			iconName="Twitter"
+			icon={FaXTwitter}
+			iconClass="hover:text-designColor"
+		/>
     </div>
   )
+};
+
+const SocialIcon = ({ href, icon: Icon, iconClass, iconName }) => {
+  return (
+    <a
+      rel="noopener noreferrer nofollow"
+	  alt={`Link to Raphael's ${iconName}`}
+      target="_blank"
+      href={href}
+      className="hover:-translate-y-1 duration-300"
+    >
+      <span className="socialCard">
+        <Icon className={`bannerIcon ${iconClass}`} />
+      </span>
+    </a>
+  );
 };
 
 export default Social;
