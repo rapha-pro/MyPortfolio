@@ -6,7 +6,7 @@ import { motion} from 'framer-motion'
 
 function Contact (props) {
   const [name, setName] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
+  const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -48,7 +48,7 @@ function Contact (props) {
         `Thank you ${name}! your message has been sent Successfully!`
         );
         sendEmail(e);
-        console.log(name, phoneNumber, email, subject, message);
+        console.log(name, phone, email, subject, message);
 
     }
 
@@ -59,14 +59,22 @@ function Contact (props) {
   function sendEmail(e) {
     e.preventDefault();    //This is important,  the email won't send without it
 
-    console.log("normally sent");
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const apiKey = process.env.REACT_APP_EMAILJS_API_KEY;
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
 
-    emailjs.sendForm('service_8b1jweq', 'template_iiia6jy', form.current, "6u8kc2bjFJySoOXaE")
+    console.log("apikeys", templateId, apiKey, serviceId)
+
+
+
+    emailjs.sendForm(serviceId, templateId, form.current, apiKey)
       .then((result) => {
           window.location.reload()  //This is to reload the page (since e.preventDefault() cancelled that behavior) 
       }, (error) => {
           console.log(error.text);
       });
+
+    console.log("Email sent");
   }
 
 
@@ -116,13 +124,13 @@ function Contact (props) {
                   </div>
 
                   <div className='w-full lgl:w-1/2 flex flex-col gap-4 group'>
-                    <label for='phoneNumber' className='text-sm text-gray-400 uppercase tracking-wide group-hover:text-gray-300'>phone number</label>
+                    <label for='phone' className='text-sm text-gray-400 uppercase tracking-wide group-hover:text-gray-300'>phone number</label>
                     <input 
-                      onChange={(e) => setPhoneNumber(e.target.value)}
-                      value={phoneNumber} 
+                      onChange={(e) => setPhone(e.target.value)}
+                      value={phone} 
                       type='text' 
-                      id='phoneNumber' 
-                      name="user_phoneNumber"
+                      id='phone' 
+                      name="user_phone"
                       className= "contactInput px-4" 
                     />
                   </div>

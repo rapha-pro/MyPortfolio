@@ -62,7 +62,7 @@ function Experience () {
                                 hardware, Arduino, while setting up FNV (Fully Networked Vehicles) systems for testing
                             </li>
                         </ul>
-                        width = "sm:w-[9rem] md:w-[13rem] mb-5"
+                        width = "sm:w-[7rem] md:w-[13rem] mb-5 pt-14 lg:pt-0"
                         result="Internship"
                         source={ford}
                         height="h-1/2"
@@ -73,12 +73,12 @@ function Experience () {
 
 
 
-        <div className='-mt-14'>
+        <div className='lgl:-mt-12'>
             <ResumeTitles 
                 headingText={"Other Experience"}
                 des={"features"}
             /> 
-            <div className='mt-12 lgl:mt-14 w-full h-[1400px] border-l-[6px] border-l-black 
+            <div className='mt-12 lgl:mt-14 w-full lg:h-[1400px] border-l-[6px] border-l-black 
             border-opacity-30 flex flex-col gap-10'>
        
                 <div className="w-full h-1/2 group flex mt-32">
@@ -99,7 +99,7 @@ function Experience () {
                         className='w-full bg-black bg-opacity-20 duration-300 flex flex-col justify-center 
                         rounded-lg p-4 lgl:px-10 gap-6 lgl:gap-5 shadow-shadowOne xl:mt-0'
                     >
-                         <div className={`relative sm:w-24 md:w-36 -mb-5 -top-4`}>
+                         <div className={`relative w-24 md:w-36 lgl:-mb-5 top-4`}>
                             <img className='text-gray-300' src={mcdonalds} alt='carleton logo' />
                         </div> 
 

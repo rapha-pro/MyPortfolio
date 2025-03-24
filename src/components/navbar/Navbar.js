@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import {mylogo} from "../../assets/index"
 import { navLinksData } from '../../constants'
-import Social from "../home/Social";
+import Social from '../home/Social';
 import { Link } from 'react-scroll';
 import { FiMenu } from 'react-icons/fi';
 import { MdClose } from 'react-icons/md';
 import { ABOUT_TEXT } from '../../constants/aboutme';
+import Logo from './logo';
 
 
 export default function Navbar() {
@@ -23,9 +24,7 @@ export default function Navbar() {
 
   return (
     <div id='navbar' className='w-full h-24 sticky z-50 bg-bodyColor top-0 mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-700'>
-        <div>
-            <img src={mylogo} alt="Logo"/>
-        </div>
+        <Logo />
         <div>
             <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">
                 {
@@ -59,7 +58,7 @@ export default function Navbar() {
                     p-4 scrollbar-hide'>
                         <div className='flex flex-col gap-8 py-2 relative'>
                             <div>
-                                <img className='w-20' src={ mylogo } alt="logo" />
+                            <Logo width='w-14'/>
                                 <div className='text-sm text-gray-300 mt-6 leading-6 tracking-wide flex flex-col gap-2'>
                                     <p> 
                                         { ABOUT_TEXT[1] }

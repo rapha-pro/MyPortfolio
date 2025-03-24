@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <!-- Gradient Definitions -->
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="80%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="wingGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#bfdbfe" />
+    </linearGradient>
+    <linearGradient id="lightningGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#eff6ff" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Circle with Subtle Inner Shadow -->
+  <circle cx="150" cy="150" r="120" fill="url(#techGradient)"/>
+  <circle cx="150" cy="150" r="115" fill="url(#techGradient)" filter="drop-shadow(0px 0px 8px rgba(0,0,0,0.2))"/>
+  
+  <!-- Stylized RO Monogram -->
+  <path d="M105,115 L140,115 C155,115 165,125 165,140 C165,150 160,158 150,162 L165,190 L140,190 L125,165 L125,190 L105,190 Z" fill="white" filter="drop-shadow(1px 1px 2px rgba(0,0,0,0.2))"/>
+  <path d="M125,132 L125,148 L138,148 C143,148 145,145 145,140 C145,135 143,132 138,132 Z" fill="url(#techGradient)"/>
+  
+  <!-- O Element (Data Circle) -->
+  <circle cx="180" cy="150" r="35" fill="none" stroke="white" stroke-width="15" filter="drop-shadow(1px 1px 2px rgba(0,0,0,0.2))"/>
+  
+  <!-- Lightning Bolt Inside O - Modern filled style -->
+  <path d="M180,128 L170,148 L180,148 L170,172" fill="url(#lightningGradient)" />
+  <path d="M180,128 L190,148 L180,148 L190,172" fill="url(#lightningGradient)" />
+  
+  <!-- Glow effect -->
+  <circle cx="180" cy="150" r="4" fill="white" filter="drop-shadow(0px 0px 2px rgba(255,255,255,0.8))"/>
+  
+  <!-- Circular Dots Around Main Logo -->
+  <circle cx="75" cy="110" r="3" fill="#dbeafe" opacity="0.7"/>
+  <circle cx="85" cy="90" r="3" fill="#dbeafe" opacity="0.7"/>
+  <circle cx="225" cy="110" r="3" fill="#dbeafe" opacity="0.7"/>
+  <circle cx="215" cy="90" r="3" fill="#dbeafe" opacity="0.7"/>
+  <circle cx="75" cy="190" r="3" fill="#dbeafe" opacity="0.7"/>
+  <circle cx="225" cy="190" r="3" fill="#dbeafe" opacity="0.7"/>
+  <circle cx="150" cy="60" r="3" fill="#dbeafe" opacity="0.7"/>
+  <circle cx="150" cy="240" r="3" fill="#dbeafe" opacity="0.7"/>
+  
+  <!-- Flight Path -->
+  <path d="M85,200 C120,180 180,220 215,200" fill="none" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Airplane Wing Element -->
+  <path d="M85,200 L65,220 L105,210 Z" fill="url(#wingGradient)"/>
+</svg>
