@@ -1,32 +1,25 @@
-import React, { useEffect } from "react";
-import { mylogo } from "../../assets/index";
+import React, { useEffect, useRef } from "react";
 import Social from "../home/Social";
-import Cube from "../../cube";
-import { OrbitControls } from "three/addons/controls/OrbitControls.js";
-import * as THREE from 'three';
+import createCube from '../../cube';
 
 function Footer() {
-//const cube = Cube();
-  const { cube, scene, camera } = Cube();
-  const renderer = new THREE.WebGLRenderer();
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.update();
 
-  useEffect(() => {
-      const cubeContainer = document.getElementById("cube-2");
-      cubeContainer.appendChild(renderer.domElement);
-      renderer.setSize(300, 300);
-      animate();
-  }, []);
+    const cubeCleanupRef = useRef(null);
   
-
-  function animate() {
-      requestAnimationFrame(animate);
-      renderer.render(scene, camera);
-     
-      cube.rotation.x += 0.0;
-      cube.rotation.y += 0.01;
-  }
+    useEffect(() => {
+      const cubeContainer = document.getElementById("cube-footer");
+      
+      if (cubeContainer) {
+        const cleanup = createCube(cubeContainer);
+        cubeCleanupRef.current = cleanup;
+      }
+      
+      return () => {
+        if (cubeCleanupRef.current) {
+          cubeCleanupRef.current();
+        }
+      };
+    }, []);
 
 
   return (
@@ -42,12 +35,10 @@ function Footer() {
                     </div>
 
                 </div>
-                <div><Social  /></div>
+                {/* <div><Social  /></div> */}
             </div>
             
-            <div id="cube-2" className=''>
-                      
-            </div>
+            <div id="cube-footer" className="-ml-0 lg:-ml-10" style={{ width: "200px", height: "200px" }}></div>
         </div>
     </div>
   )

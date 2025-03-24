@@ -13,13 +13,17 @@ import male from "./images/testmonial/default-1.png";
 import female from "./images/testmonial/default-2.png";
 import quote from "./images/testmonial/quote.png";
 import contactImg from "./images/contact/contactImg.png";
-import java from "./images/logos/javaLogo.png";
+import java from "./images/logos/java.png";
 import python from "./images/logos/python.png";
 import html from "./images/logos/html.png";
 import css from "./images/logos/css.png";
 import tailwind from "./images/logos/tailwind.png";
 import javascript from "./images/logos/js.png";
-import react_logo from "./images/logos/react.png";
+import react_logo from "./images/logos/react_gradient.png";
+import cpp from "./images/logos/c++.png";
+import docker from "./images/logos/docker.png";
+import nextjs from "./images/logos/nextjs.png";
+import database from "./images/logos/database.gif";
 import english from "./images/projects/english.jpg";
 import snakeSim from "./images/projects/snake-sim.jpg";
 import snake from "./images/projects/snake.jpg";
@@ -48,6 +52,10 @@ export {
   tailwind, 
   javascript,
   react_logo,
+  cpp,
+  docker,
+  nextjs,
+  database,
   profile,
   profile2,
   profile3,

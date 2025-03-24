@@ -1,11 +1,9 @@
-import {React, useEffect} from 'react';
+import {React, useEffect, useRef} from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
-import * as THREE from 'three'
-import { OrbitControls } from "three/addons/controls/OrbitControls.js"
-import Cube from '../../cube'
 import Social from './Social'
 import { motion } from 'framer-motion'
 import { ABOUT_TEXT } from '../../constants/aboutme';
+import createCube from '../../cube';
 
 
 export default function Home() {
@@ -17,33 +15,30 @@ export default function Home() {
       delaySpeed: 1800,
   })
 
-  //const cube = Cube();
-  const { cube, scene, camera } = Cube();
-  const renderer = new THREE.WebGLRenderer();
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.update();
-
-  useEffect(() => {
-      const cubeContainer = document.getElementById("cube");
-      cubeContainer.appendChild(renderer.domElement);
-      renderer.setSize(200, 200);
-      animate();
-  }, []);
+  const cubeCleanupRef = useRef(null);
   
-
-  function animate() {
-      requestAnimationFrame(animate);
-      renderer.render(scene, camera);
-      controls.update()
-      cube.rotation.x += 0.0;
-      cube.rotation.y += 0.01;
-  }
+  useEffect(() => {
+    const cubeContainer = document.getElementById("cube");
+    
+    if (cubeContainer) {
+      // Create cube and get cleanup function
+      const cleanup = createCube(cubeContainer);
+      cubeCleanupRef.current = cleanup;
+    }
+    
+    // Cleanup on component unmount
+    return () => {
+      if (cubeCleanupRef.current) {
+        cubeCleanupRef.current();
+      }
+    };
+  }, []);
 
   return (
         <motion.div 
             initial = {{opacity:0, translateY: -90}}
             whileInView = {{opacity:1, transition:{duration:1.2}, translateY: 0}}
-            className='w-full lgl:w-1/2 flex flex-col gap-20 pr-8  xl:pr-0'>
+            className='w-full lgl:w-1/2 flex flex-col gap-20 pr-8  xl:pr-0 '>
             <div className='flex flex-col gap-5'>
                 <h3 class="text-lg text-gray-500 uppercase font-bold ">hello,</h3>
                 <h1 className='text-5xl lgl:text-6xl font-bold text-white'>I'm {" "}
@@ -74,23 +69,21 @@ export default function Home() {
                 </div>
             </div>
 
-          <div className='flex flex-col gap-6 md:flex-row lgl:flex-row md:gap-[8.5rem]  lgl:gap-10 xl:gap-48'>
+          <div className='flex flex-col gap-16 md:flex-row lgl:flex-row md:gap-[8.5rem]  lgl:gap-10 xl:gap-48 '>
        
-            <div>
-                <h2 className='text-base uppercase font-titleFont mb-4 '>
+            <div className='flex flex-col items-center lg:items-start'>
+                <h2 className='text-base uppercase font-titleFont mb-4'>
                     find me on
                 </h2>  
                 <Social  />
             </div>
 
-              <div>
-                  <h2 className='text-base uppercase font-titleFont mb-4 '>
-                      best skills in
-                  </h2>
-                  <div id="cube" className='-ml-2'>
-                    {/* cube here */}
-                  </div>
-              </div>
+                <div className='flex flex-col items-center lg:items-start'>
+                    <h2 className='text-base uppercase font-titleFont mb-1 '>
+                        best skills in
+                    </h2>
+                    <div id="cube" className="-ml-0 lg:-ml-10" style={{ width: "200px", height: "200px" }}></div>
+                </div>
           </div>
       </motion.div>
   );
