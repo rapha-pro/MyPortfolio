@@ -58,11 +58,11 @@ export default function createCube(containerElement) {
   
   // Create materials for each face
   const materials = [
-    createGlassMaterial(docker),      // Right face
+    createGlassMaterial(react_logo),  // Right face
     createGlassMaterial(python),      // Left face
-    createGlassMaterial(react_logo),  // Top face
-    createGlassMaterial(java),        // Bottom face
-    createGlassMaterial(nextjs),      // Front face
+    createGlassMaterial(docker),      // Top face
+    createGlassMaterial(nextjs),      // Bottom face
+    createGlassMaterial(java),        // Front face
     createGlassMaterial(cpp)          // Back face
   ];
   
@@ -98,7 +98,7 @@ export default function createCube(containerElement) {
     animationId = requestAnimationFrame(animate);
     
     // Update the cube rotation
-    cube.rotation.y += 0.01;
+    cube.rotation.y += 0.002;
     
     // Update the environment map periodically for reflections
     if (Math.random() > 0.95) {
