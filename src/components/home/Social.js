@@ -13,7 +13,7 @@ function Social () {
 			iconClass="hover:text-gray-600"
 		/>
 		<SocialIcon
-			href="https://www.facebook.com/raphaelonana/"
+			href="https://www.linkedin.com/in/raphaelonana/"
 			iconName="LinkedIn"
 			icon={FaLinkedinIn}
 			iconClass="hover:text-blue-600"

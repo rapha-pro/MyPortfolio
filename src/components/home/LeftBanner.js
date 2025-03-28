@@ -82,7 +82,7 @@ export default function Home() {
                     <h2 className='text-base uppercase font-titleFont mb-1 '>
                         best skills in
                     </h2>
-                    <div id="cube" className="-ml-0 lg:-ml-10" style={{ width: "200px", height: "200px" }}></div>
+                    <div id="cube" className="-ml-4 lg:-ml-14" style={{ width: "200px", height: "200px" }}></div>
                 </div>
           </div>
       </motion.div>

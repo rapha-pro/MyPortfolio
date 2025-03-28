@@ -22,7 +22,7 @@ export default function createCube(containerElement) {
     antialias: true,
     alpha: true 
   });
-  renderer.setSize(200, 200);
+  renderer.setSize(250, 250);
   renderer.setClearColor(0x000000, 0);
   containerElement.appendChild(renderer.domElement);
   

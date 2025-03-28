@@ -136,8 +136,8 @@ function Testimonial() {
                             subTitle="July 29, 2023"
                             numberOfStars={5}
                             description="
-                                Nice website Raphaël! I'm amazed by the UI. From the design to navigation, all sections makes it a pleasure to explore, 
-                                especially the resume part. Keep up the fantastic work!
+                                Nice website Raphaël! I'm amazed by the UI. From the design to navigation, especially the resume part, all sections makes it a pleasure to explore. 
+                                Keep up the fantastic work!
                             "
                         />
      
