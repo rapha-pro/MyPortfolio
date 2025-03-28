@@ -1,4 +1,5 @@
-# Raphaël Portfolio
+# Raphaël Portfolio  ![My Logo](/public/favicon/favicon-32x32.png)
+
 
 ### Overview
 Welcome to my portfolio website! This project showcases my work and skills as a software engineering student. The website is built using React, Tailwind CSS, and npm, and it features a clean, responsive design to provide an optimal user experience across various devices.
