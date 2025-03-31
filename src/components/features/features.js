@@ -20,24 +20,22 @@ export default function Feature() {
       >
         <Card 
           title="Web Development" 
-          des="Since the creation of my very first website (English Trivia), i have been driven 
-          to learn web dev, which has further led me to building this website"
+          des="Since creating my first site (English Trivia), I've been driven to learn web dev, which led to this site"
           icon={<RiComputerFill  />}
           done={true}
           lengthy = {false}
         />
         <Card 
           title="App Development" 
-          des="I have always been amazed by how some lines of codes could compile and executed to create an app.
-          Since then, i have always had a high interest learning such versatile technologies, and buid one myself"
+          des="I've always been amazed by how code compiles into apps. Since then, I've been passionate 
+               about learning and building with versatile technologies"
           icon={<FaMobile />}
           done={false}
           lengthy = {false}
         />
         <Card 
           title="Artificial Intelligence" 
-          des="AI is a rapidly growing field is becoming an irreplacable tool in many industries. My passion for 
-          AI led me into my current program, where I aspire to learn various technologies to build something impactful"
+          des="AI is evolving fast, driving my passion to pursue a career as a Data Scientist and AI/ML Engineer"
           icon={<FaGlobe  />}
           done={false}
           lengthy = {true}
