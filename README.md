@@ -1,10 +1,10 @@
-# Raphaël Portfolio  ![My Logo](/public/favicon/favicon-32x32.png)
+# Raphaël Portfolio  ![Logo](/public/favicon/favicon-32x32.png)
 
 
 ### Overview
-Welcome to my portfolio website! This project showcases my work and skills as a software engineering student. The website is built using React, Tailwind CSS, and npm, and it features a clean, responsive design to provide an optimal user experience across various devices.
+Welcome to my portfolio website! This project showcases my work and skills as a software engineering student. The website is built using ReactJs and Tailwind CSS. It features a clean, responsive design to provide an optimal user experience across various devices.
 
-#### To see full Website [nathonana.com](https://nathonana.com/)
+#### To see full Website, visit  [nathonana.com](https://nathonana.com/)
 
 ### Features
 - **Responsive Design**: Ensures the website looks great on all screen sizes.
