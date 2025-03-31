@@ -2,6 +2,9 @@ import React from "react";
 import { contactImg, mainProfile, contactMe } from '../../assets/index';
 import Social from "../home/Social";
 import { motion} from 'framer-motion'
+import { FaEnvelope } from 'react-icons/fa';
+import { mailTo } from "../../constants/aboutme";
+import ActionButtons from "../home/actionButtons";
 
 function ContactLeft (props) {
   return (
@@ -25,17 +28,21 @@ function ContactLeft (props) {
                 <span className='leading-10'>Hope to hear from you soon!</span>
 
             </p>
-            <p className='text-base text-gray-400 flex items-center gap-2 capitalize'>email: {" "} 
-                <a className='text-lightText lowercase' href="mailto:onanaraphaelnathan@gmail.com?subject=Job Inquiry&body=Hello Raphaël, I would like to know more about your services.">onanaraphaelnathan@gmail.com</a>
-            </p>
+            <a href={mailTo} className='text-base text-blue-400 flex items-center gap-2 capitalize'>
+                <span className="mt-1"><FaEnvelope /></span>
+                <span className="">email</span>
+                <span className='text-gray-500 hover:text-gray-400 lowercase italic'>(click to email me)</span>
+            </a>
             <p className='text-base text-gray-400 flex items-center gap-2 capitalize'>Location: {" "} <span className='text-lightText capitalize'>Canada</span></p>
         </div>
 
         <div>
-            <h2 className='text-base uppercase font-titleFont mb-4 '>
-                find me on
-            </h2>  
-            <Social  />
+            {/* 
+                <h2 className='text-base uppercase font-titleFont mb-4 '>
+                    find me on
+                </h2>   
+            */}
+            <ActionButtons pad_y="py-0"/>
         </div>
     </motion.div>
   )

@@ -10,7 +10,7 @@ function FooterBottom() {
       </p>
       <div>
         <p>credits</p>
-        <p>icons by <a href="https://icons8.com/">Icons8</a></p>
+        <p>cube icons by <a href="https://icons8.com/">Icons8</a></p>
         <a href="http://www.freepik.com">vector images designed by slidesgo / Freepik</a>
       </div>
     </div>

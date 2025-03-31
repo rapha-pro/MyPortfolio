@@ -4,15 +4,16 @@ import Social from './Social'
 import { motion } from 'framer-motion'
 import { ABOUT_TEXT } from '../../constants/aboutme';
 import createCube from '../../cube';
+import ActionButtons from './actionButtons';
 
 
 export default function Home() {
   const [text] = useTypewriter ({
-      words: ['AI/ML Engineer', 'Software Developer', 'Web developer'],
+      words: ['Data Scientist Expert', 'AI/ML Engineer', 'Software Eng. Expert'],
       loop: true,
-      typeSpeed: 40,
-      deleteSpeed: 20,
-      delaySpeed: 1800,
+      typeSpeed: 130,
+      deleteSpeed: 80,
+      delaySpeed: 3000,
   })
 
   const cubeCleanupRef = useRef(null);
@@ -76,13 +77,14 @@ export default function Home() {
                     find me on
                 </h2>  
                 <Social  />
+                <ActionButtons />
             </div>
 
-                <div className='flex flex-col items-center lg:items-start'>
+                <div className='flex flex-col items-center lg:items-start lg:-ml-14'>
                     <h2 className='text-base uppercase font-titleFont mb-1 '>
                         best skills in
                     </h2>
-                    <div id="cube" className="-ml-4 lg:-ml-14" style={{ width: "200px", height: "200px" }}></div>
+                    <div id="cube" className="-ml-4 lg:-ml-14 -mt-1" style={{ width: "200px", height: "200px" }}></div>
                 </div>
           </div>
       </motion.div>

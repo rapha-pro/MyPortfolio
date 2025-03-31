@@ -7,4 +7,5 @@ export const ABOUT_TEXT = [
      industry technologies, learning quickly, and effective communication",
     "Explore my website to learn more about my journey!"
 ]
-  
+
+export const mailTo="mailto:onanaraphaelnathan@gmail.com?subject=Job Opportunity&body=Hello Raphaël, I would like to know more about your services."

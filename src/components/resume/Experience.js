@@ -37,7 +37,7 @@ function Experience () {
                                 and docker in a scaled Agile team environment.
                             </li>
                         </ul>
-                        width = "sm:w-[14rem] md:w-[20rem] -mb-[4rem] -ml-5" 
+                        width = "sm:w-[14rem] md:w-[20rem] -mb-[2rem] -ml-3" 
                         result="Internship"
                         source={caterpillar}
                         height="h-1/2"

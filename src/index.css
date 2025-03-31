@@ -38,6 +38,13 @@ body {
     text-lightText px-10 py-2 active:outline-none focus-visible:outline-blue-500 outline-none
     focus-visible:border-b-transparent duration-300 resize-none;
   }
+
+  .actionButton{
+    @apply h-[90%] relative border-2
+    items-center justify-center rounded-md shadow-lg flex
+    hover:translate-y-1 transition-all cursor-pointer
+    duration-300 justify-center items-center;
+  }
   
 }
 

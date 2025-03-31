@@ -3,6 +3,8 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { python, java, cpp, nextjs, docker, javascript, database, react_logo} from './assets/index';
 
 export default function createCube(containerElement) {
+  const speed = 0.004;
+
   // Only proceed if we have a container
   if (!containerElement) return null;
   
@@ -15,7 +17,9 @@ export default function createCube(containerElement) {
   
   // Create camera
   const camera = new THREE.PerspectiveCamera(75, 200 / 200, 0.1, 1000);
-  camera.position.z = 2;
+  camera.position.x = 0;
+  camera.position.y = -0.4;  // Position below the cube
+  camera.position.z = 1.7; 
   
   // Create renderer with alpha for glass effect
   const renderer = new THREE.WebGLRenderer({ 
@@ -91,14 +95,14 @@ export default function createCube(containerElement) {
   const cubeCamera = new THREE.CubeCamera(0.1, 10, cubeRenderTarget);
   scene.add(cubeCamera);
   
-  // Create animation function
+  // Animation function
   let animationId = null;
   
   const animate = () => {
     animationId = requestAnimationFrame(animate);
     
     // Update the cube rotation
-    cube.rotation.y += 0.002;
+    cube.rotation.y += speed;
     
     // Update the environment map periodically for reflections
     if (Math.random() > 0.95) {
