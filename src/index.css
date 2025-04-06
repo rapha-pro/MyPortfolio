@@ -4,10 +4,10 @@
 @tailwind utilities;
 
 
-html,
+/* html,
 body {
   @apply box-border w-full h-full m-0 p-0;
-}
+} */
 
 @Layer components{
   .bannerIcon{
