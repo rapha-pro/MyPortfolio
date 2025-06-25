@@ -34,17 +34,58 @@ function Skills () {
             />
             <Capacity  
               title = 'C'
-              percentage = {50}
+              percentage = {40}
             />
             <Capacity  
               title = 'C++'
-              percentage = {60}
+              percentage = {45}
             />
-            
+            <Capacity  
+              title = 'SQL'
+              percentage = {30}
+            />
            
         </div>
 
 
+
+
+        <div className='w-full'>
+            <ResumeTitles 
+                headingText={"Data Science and Machine Learning"}
+                des={"technical skills"}
+            /> 
+            <div className='w-full'>
+              <Capacity  
+                title = 'Pandas'
+                percentage = {80}
+              />
+              <Capacity  
+                title = 'Numpy'
+                percentage = {75}
+              />
+              <Capacity  
+                title = 'Scipy'
+                percentage = {40}
+              />
+              <Capacity  
+                title = 'Scikit-learn'
+                percentage = {0}
+              />
+              <Capacity  
+                title = 'Tensorflow'
+                percentage = {0}
+              />
+              <Capacity  
+                title = 'Pytorch'
+                percentage = {0}
+              />
+              <Capacity  
+                title = 'Matplotlib & Seaborn'
+                percentage = {60}
+              />
+            </div>
+        </div>
 
 
         <div className='w-full'>
@@ -71,7 +112,7 @@ function Skills () {
               />
               <Capacity  
                 title = 'Bootstrap'
-                percentage = {80}
+                percentage = {90}
               />
               <Capacity  
                 title = 'Django'
@@ -79,7 +120,7 @@ function Skills () {
               />
               <Capacity  
                 title = 'MongoDB'
-                percentage = {60}
+                percentage = {50}
               />
             </div>
         </div>
@@ -89,16 +130,12 @@ function Skills () {
 
         <div className="w-full">
           <ResumeTitles 
-              headingText={"Technical Tools"}
+              headingText={"Tools"}
               des={"technical skills"}
             /> 
           <div className='w-full'>
-            <Capacity  
-              title = 'Github actions'
-              percentage = {80}
-            />
               <Capacity  
-                title = 'Git/GitHub'
+                title = 'Git / GitHub / GitHub Actions'
                 percentage = {80}
               />
             <Capacity  
@@ -118,6 +155,10 @@ function Skills () {
               percentage = {90}
             />
             <Capacity  
+              title = 'Jira'
+              percentage = {60}
+            />
+            <Capacity  
               title = 'AWS Cloud Practitioner'
               percentage = {80}
             />
@@ -133,7 +174,7 @@ function Skills () {
             <div className='w-full'>
               <Capacity  
                   title = 'english'
-                  percentage = {90}
+                  percentage = {95}
               />
               <Capacity  
                   title = 'french'

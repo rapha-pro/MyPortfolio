@@ -1,5 +1,5 @@
 import React from 'react';
-import {projectOne, projectTwo, projectThree, trivia, interactify, galleria, shoppy_mart, christmas, english, snake, snakeSim, hangman, hangman2, hangman3, weather, memory, internship_nest} 
+import {cu_webring, foodbank, galleria, shoppy_mart, christmas, english, snake, snakeSim, hangman, hangman2, hangman3, weather, memory, internship_nest} 
 from '../../assets/index';
 import Title from '../layouts/Title';
 import ProjectsCard from './ProjectsCard';
@@ -24,7 +24,7 @@ export default function Projects() {
                 whileInView = {{opacity:1, transition:{duration:.5}, scale:1}}
                 className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-14 flex-grow items-baseline'>
 
-                {/* This Project on StandBy */}
+                {/* This Project is discontinued */}
                 {/* <ProjectsCard  
                     title="Internship Nest"
                     des= " Currently in the development of an internship finder application, 
@@ -38,6 +38,31 @@ export default function Projects() {
                     space={0}
                 /> */}
                 
+                
+                <ProjectsCard  
+                    title="CU-Webring"
+                    des= "Contributed creation of the CU-Webring, a platform for Carleton University students and alumni to showcase
+                    their personal websites and portfolios, enhancing visibility and networking opportunities"
+                    src={cu_webring}
+                    gitHref="https://github.com/yufengliu15/cu-webring"                    
+                    globeHref="https://cu-webring.org/"
+                    technologies= {["Javascript","Github Actions", "Html", "css" ]}
+                    space={0}
+                    date_context="Jan 2025 - Present"
+                />
+
+                <ProjectsCard  
+                    title="Foodbank AI "
+                    des= "FoodQuest is a gamified web application designed to encourage food donations by allowing users to donate items, 
+                    track their contributions, and earn points based on the nutritional value of the donated items"
+                    src={foodbank}
+                    gitHref="https://github.com/rapha-pro/FoodQuest"                    
+                    globeHref="https://devpost.com/software/foodbank-ai"
+                    technologies= {["Pytorch","Flask", "Pandas", "Numpy", "Python", "React", "PostgreSql" ]}
+                    space={0}
+                    date_context="Sep 2024  •  Hackathon Project"
+                />
+                
                 <ProjectsCard  
                     title="Galleria Webapp"
                     des= "Created a gallery web application allowing artists to showcase their art, 
@@ -48,6 +73,7 @@ export default function Projects() {
                     youtubeHref="https://youtu.be/BV4YvM95jKQ"
                     technologies= {["Node.js", "Express.js", "MongoDB", "Pug", "Html", "css"]}
                     space={0}
+                    date_context="Fall 2023 •  Web Dev Final Project"
                 />
 
                 <ProjectsCard  
@@ -59,6 +85,7 @@ export default function Projects() {
                     globeHref=""
                     technologies= {["Node.js", "Express.js", "MongoDB", "Pug", "Html", "css"]}
                     space={0}
+                    date_context ="Fall 2023 •  Course Project"
                 />
 
                 <ProjectsCard  
@@ -70,6 +97,7 @@ export default function Projects() {
                     globeHref="https://raphael-xmas-phi.vercel.app/"
                     technologies= {["Html", "css", "javascript"]}
                     space={0}
+                    date_context="Dec 2023"
                 />
 
                 <ProjectsCard  
@@ -83,6 +111,7 @@ export default function Projects() {
                     globeHref=""
                     technologies= {["Django", "JavaScript", "bootstrap", "Html", "css"]}
                     space={0}
+                    date_context="Dec 2021 - April 2022"
                 />
 
                 <ProjectsCard  
@@ -93,6 +122,7 @@ export default function Projects() {
                     globeHref=""
                     technologies={["javascript", "react", "bootstrap", "css"]}
                     space={0}
+                    date_context="High School Summer 2022"
                 />
 
                 <ProjectsCard  
@@ -105,6 +135,7 @@ export default function Projects() {
                     globeHref=""
                     technologies= {["Python", "Tkinter"]}
                     space={0}
+                    date_context="High School Summer 2022"
                 />
                 <ProjectsCard  
                     title="Snake-Ladder game Simulation"
@@ -115,6 +146,7 @@ export default function Projects() {
                     globeHref=""
                     technologies= {["Python", "Pygame"]}
                     space={40}
+                    date_context="Fall 2022 •  Course Project"
                 />
                 <ProjectsCard  
                     title="Hangman Game"
@@ -125,6 +157,7 @@ export default function Projects() {
                     globeHref=""
                     technologies= {["Python", "Pygame"]}
                     space={40}
+                    date_context="High School Summer 2022"
                 />
                 <ProjectsCard  
                     title="Snake Game"
@@ -135,6 +168,7 @@ export default function Projects() {
                     globeHref=""
                     technologies= {["Python", "Tkinter"]}
                     space={40}
+                    date_context="High School Summer 2022"
                 />
                 
             </motion.div>

@@ -19,24 +19,24 @@ export default function Feature() {
         className='grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 xl:gap-20'
       >
         <Card 
-          title="Web Development" 
+          title="Data Science & AI/ML" 
+          des="AI is evolving fast, driving my passion to pursue a career as a Data Scientist and AI/ML Engineer"
+          icon={<FaGlobe  />}
+          done={false}
+          lengthy = {false}
+        />
+        <Card 
+          title="FullStack Development" 
           des="Since creating my first site (English Trivia), I've been driven to learn web dev, which led to this site"
           icon={<RiComputerFill  />}
           done={true}
-          lengthy = {false}
+          lengthy = {true}
         />
         <Card 
           title="App Development" 
           des="I've always been amazed by how code compiles into apps. Since then, I've been passionate 
                about learning and building with versatile technologies"
           icon={<FaMobile />}
-          done={false}
-          lengthy = {false}
-        />
-        <Card 
-          title="Artificial Intelligence" 
-          des="AI is evolving fast, driving my passion to pursue a career as a Data Scientist and AI/ML Engineer"
-          icon={<FaGlobe  />}
           done={false}
           lengthy = {true}
         />

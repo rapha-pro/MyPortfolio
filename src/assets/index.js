@@ -2,11 +2,8 @@ import mylogo from "./images/mylogo.png";
 import profile from "./images/myprofile.jpg";
 import profile2 from "./images/myprofile-1.jpg";
 import profile3 from "./images/myprofile-2.jpg";
-import projectOne from "./images/projects/projectOne.jpg";
-import projectTwo from "./images/projects/projectTwo.jpg";
 import carleton from "./images/carleton.png";
 import trivia from "./images/projects/trivia-1.png";
-import projectThree from "./images/projects/projectThree.jpeg";
 import testimonialOne from "./images/testmonial/testimonialOne.png";
 import testimonialTwo from "./images/testmonial/testimonialTwo.png";
 import male from "./images/testmonial/default-1.png";
@@ -43,6 +40,9 @@ import ford from "./images/ford.png";
 import caterpillar from "./images/caterpillar.png";
 import contactMe from "./images/contact-me.jpg";
 import review from "./images/review.jpg";
+import foodbank from "./images/projects/foodbank_ai.png";
+import cu_webring from "./images/projects/cu-webring.png";
+
 
 export {
   java,
@@ -60,9 +60,6 @@ export {
   profile2,
   profile3,
   mylogo,
-  projectOne,
-  projectTwo,
-  projectThree,
   trivia,
   testimonialOne,
   testimonialTwo,
@@ -89,5 +86,7 @@ export {
   ford,
   caterpillar,
   contactMe,
-  review
+  review,
+  foodbank,
+  cu_webring
 };
