@@ -38,7 +38,7 @@ function Achievements () {
                     >
                         <div className='flex flex-col lgl:flex-row justify-between lgl:items-center gap-4 p-2 lgl:gap-0'>
                             <div>
-                                <h3 className='text-xl md:text-2xl font-semibold group-hover:text-white duration-300'>Dean's Honour List Award</h3>
+                                <h3 className='text-xl md:text-2xl font-semibold group-hover:text-white duration-300'>Dean's Honour List Award (2022 - Present)</h3>
                                 <p className='text-sm md:text-base mt-2 text-gray-400 group-hover:text-white duration-300 capitalize'>carleton University</p>
                             </div>
                         </div>
