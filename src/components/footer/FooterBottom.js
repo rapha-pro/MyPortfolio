@@ -9,7 +9,7 @@ function FooterBottom() {
         <span className="ml-2">- Nelson Mandela</span>
       </p>
       <div>
-        <p>credits</p>
+        <p>Credits</p>
         <p>cube icons by <a href="https://icons8.com/">Icons8</a></p>
         <a href="http://www.freepik.com">vector images designed by slidesgo / Freepik</a>
       </div>
