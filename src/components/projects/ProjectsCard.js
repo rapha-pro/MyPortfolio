@@ -2,7 +2,7 @@ import React from 'react';
 import {BsGithub} from 'react-icons/bs';
 import {FaGlobe, FaYoutube} from 'react-icons/fa';
 
-export default function ProjectsCard( {title, des, src, gitHref, globeHref, youtubeHref, technologies, space} ) {
+export default function ProjectsCard( {title, des, src, gitHref, globeHref, youtubeHref, technologies, space, date_context} ) {
 
 
     const TechList = () => {
@@ -94,6 +94,11 @@ export default function ProjectsCard( {title, des, src, gitHref, globeHref, yout
                     >
                         {des}
                     </p>
+                    {date_context && (
+                        <p className="mt-3 text-xs text-gray-400 mt-1">
+                            {date_context}
+                        </p>
+                    )}
                 </div>
 
                 {TechList()}
