@@ -41,7 +41,7 @@ export default function Projects() {
                 
                 <ProjectsCard  
                     title="CU-Webring"
-                    des= "Contributed creation of the CU-Webring, a platform for Carleton University students and alumni to showcase
+                    des= "Contributed to the creation of the CU-Webring, a platform for Carleton University students and alumni to showcase
                     their personal websites and portfolios, enhancing visibility and networking opportunities"
                     src={cu_webring}
                     gitHref="https://github.com/yufengliu15/cu-webring"                    
