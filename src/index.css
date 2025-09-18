@@ -4,11 +4,6 @@
 @tailwind utilities;
 
 
-html,
-body {
-  @apply box-border w-full h-full m-0 p-0;
-}
-
 @Layer components{
   .bannerIcon{
     @apply w-[90%] h-[90%] absolute bg-black border-2  text-gray-200  

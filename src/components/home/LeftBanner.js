@@ -39,24 +39,26 @@ export default function Home() {
         <motion.div 
             initial = {{opacity:0, translateY: -90}}
             whileInView = {{opacity:1, transition:{duration:1.2}, translateY: 0}}
-            className='w-full lgl:w-1/2 flex flex-col gap-20 pr-8  xl:pr-0 '>
-            <div className='flex flex-col gap-5'>
-                <h3 class="text-lg text-gray-500 uppercase font-bold ">hello,</h3>
-                <h1 className='text-5xl lgl:text-6xl font-bold text-white'>I'm {" "}
-                <button data-text="Awesome" class="button">
-                    <span class="actual-text">&nbsp;Raphaël&nbsp;</span>
-                    <span class="hover-text" aria-hidden="true">&nbsp;Raphaël&nbsp;</span>
-                </button>
-                </h1>
-                <h2 className='text-2xl lg:text-4xl font-bold text-gray-300'>
-                    <span className='text-xl lg:text-3xl italic'>aspiring</span>
-                    <span> { text }</span>
-                    <Cursor 
-                        cursorBlinking="false"
-                        cursorStyle="|"
-                        cursorColor="#ff014f"
-                    />
-                </h2>
+            className='w-full lgl:w-1/2 flex flex-col gap-20'>
+            <div className='flex flex-col gap-5 '>
+                <div className='flex flex-col gap-8 text-center lg:text-start sm:mb-4'>
+                    <h3 class="text-lg text-gray-400 uppercase font-bold ">hello,</h3>
+                    <h1 className='text-5xl lgl:text-6xl font-bold text-white'>I'm {" "}
+                        <button data-text="Awesome" class="button">
+                            <span class="actual-text">&nbsp;Raphaël&nbsp;</span>
+                            <span class="hover-text" aria-hidden="true">&nbsp;Raphaël&nbsp;</span>
+                        </button>
+                    </h1>
+                    <h2 className='text-2xl lg:text-4xl font-bold text-gray-300'>
+                        <span className='text-xl lg:text-3xl italic text-gray-500'>aspiring</span>
+                        <span> { text }</span>
+                        <Cursor 
+                            cursorBlinking="false"
+                            cursorStyle="|"
+                            cursorColor="#ff014f"
+                        />
+                    </h2>
+                </div>
                 <div className='text-base font-bodyFont leading-6 tracking-wide flex flex-col gap-2'>
                     <p> 
                         { ABOUT_TEXT[1] }
